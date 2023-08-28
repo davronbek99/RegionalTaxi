@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Regional Taxi</string>
+    <string name="tv_intro1">Request a ride get picked up by a nearby community driver</string>
+    <string name="tv_next">Next</string>
+    <string name="tv_skip">Skip</string>
+    <string name="tv_intro2">Huge drivers network helps you find comfortable, safe and cheap ride</string>
+    <string name="tv_intro3">Know your driver in advance and be able to view current location in real time on the map</string>
+    <string name="tv_start">Start</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="click_taxi">AllOne Driver</string>
+    <string name="language_change">Выберите язык</string>
+    <string name="txt_language_rus">Русский</string>
+    <string name="txt_language_ozbek">O\'zbekcha</string>
+    <string name="enterSomething">Ввидени что-то</string>
+    <string name="text_phone">Номер телефона</string>
+    <string name="phone_auth_text">Через номер телефона</string>
+    <string name="auth_phone_title">Войти в систему</string>
+    <string name="signIn">Войти</string>
+    <string name="enterCode">Войти код-парол</string>
+    <string name="sendSMStoNum">На ваш номер +998 90 568 1015\n отправлен SMS с кодом</string>
+    <string name="sendAgain"><u>Отправит занова</u></string>
+    <string name="continue_">Продолжить</string>
+    <string name="enterToSystem">Войти в систему</string>
+    <string name="viaPhoneNumber">Через номер телефона</string>
+
+    <string name="noAccount">У вас нет аккаунта</string>
+    <string name="register"><u>Регистрация</u></string>
+    <string name="registerSimple">Вход</string>
+    <string name="entrance">Вход</string>
+    <string name="numberDoesntExist">В систему отсуствует такой номер</string>
+    <string name="Active">Активность</string>
+    <string name="interest_rate">Процентная ставка:</string>
+    <string name="earning">Заработок</string>
+    <string name="night_mode">Ночной режим</string>
+    <string name="more_details">Подробнее</string>
+    <string name="card_brand">Марка авто:</string>
+    <string name="color">Цвет:</string>
+    <string name="number">Номер:</string>
+    <string name="year">Год:</string>
+    <string name="registration_date">Дата регистрации</string>
+    <string name="license_term">Срок лицензии</string>
+    <string name="license_number">Номер лицензии:</string>
+    <string name="general">Общий</string>
+    <string name="from_taxi">От Такси</string>
+    <string name="from_parcels">От посылок</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="driver_card">Карта водителя:</string>
+    <string name="departure_date">Дата отбытия:</string>
+    <string name="passengers">Пасажиров:</string>
+    <string name="income">Заработок</string>
+    <string name="language">Язык</string>
+    <string name="settings">Настройки</string>
+    <string name="night_mod">Ночной режим</string>
+    <string name="logout">Выйти</string>
+    <string name="support">Тех поддержка</string>
+    <string name="change_location">Изменить постоянный маршрут</string>
+    <string name="navigator">Навигаторов</string>
+    <string name="show_card_in_new_order">Показать карту в новом заказе</string>
+    <string name="voice_notification">Голосовое уведомление</string>
+    <string name="notification">Уведомление</string>
+    <string name="payment_methods">Способы оплаты</string>
+    <string name="about_app">О программе</string>
+    <string name="from_where">Откуда:</string>
+    <string name="where">Куда:</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet Ut sed viverra senectus ut accumsan in tempor</string>
+    <string name="back">Назад</string>
+    <string name="cash_method">Наличными</string>
+    <string name="corporate">Корпоративный</string>
+    <string name="inside_of_city">Такси внутри города</string>
+    <string name="tariff_inside">Внутри городской пакет</string>
+    <string name="mail_inside">Почта внутри города</string>
+    <string name="set_tariff">Настроить</string>
+    <string name="more">Подробнее</string>
+    <string name="tariffs">Тарифы</string>
+    <string name="route">Маршрут</string>
+    <string name="lorem_ipsum_dolor">Lorem In augue quise feugiat enim nibh faucibus.</string>
+
+    <string name="Accept">Принять</string>
+
+    <string name="women_tariff">Женский тариф</string>
+    <string name="need_to_check">Вам требуется пройти проверку в наших центрах</string>
+    <string name="profile">Профиль</string>
+    <string name="history">История</string>
+    <string name="earnings">Заработок</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="choose_region">Выберите регион</string>
+    <string name="search">Поиск</string>
+    <string name="bonus_points">Бонусные баллы:</string>
+    <string name="go_to">Перейти</string>
+    <string name="collect_bonuses">Как набрать бонусы</string>
+    <string name="to_use">Как использовать</string>
+    <string name="your_gender">Ваш пол</string>
+    <string name="your_birthday">День вашего рождения</string>
+    <string name="change_my_details">Изменить мои данные</string>
+    <string name="change_my_phone">Изменить номер телефона</string>
+    <string name="change_my_photo">Изменить фото профиля</string>
+    <string name="language_app">Язык программы</string>
+    <string name="female">Женский</string>
+    <string name="male">Мужской</string>
+    <string name="choose_gender">Веберите пол</string>
+    <string name="orders_history">История заказов</string>
+    <string name="bonuses">Бонусы</string>
+    <string name="bind_card">Привязка карты</string>
+    <string name="info">Информация</string>
+    <string name="bonus_balls">Бонусные баллы</string>
+    <string name="bonus">бонусы</string>
+    <string name="sum">сум</string>
+    <string name="how_to_get">Как получить?</string>
+    <string name="how_to_get_bonus">Как набрать бонусы</string>
+    <string name="how_to_use">Как использовать</string>
+    <string name="transaction_history">История транзакции</string>
+    <string name="card_binding">Привязать карту</string>
+    <string name="enter_card_data">Ввести данные карты</string>
+    <string name="card_title">Название карты</string>
+    <string name="change_route">Изменить постоянный маршрут</string>
+
+    <string name="show_map_order">Показать карту в новом заказе</string>
+    <string name="choose_time">Выберите время</string>
+    <string name="from">Откуда:</string>
+    <string name="enter_time">Введите время</string>
+    <string name="to">До</string>
+    <string name="accept">Принять</string>
+    <string name="card_number">Номер карты</string>
+    <string name="valid_date">Срок действия</string>
+    <string name="delete">Удалить</string>
+    <string name="save">Сохранить</string>
+    <string name="card_unavailable">*Отсутсвует такая карта</string>
+    <string name="fill_field_correct">*Заполните все данные корректно</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="region_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="main_bottom">Главная</string>
+    <string name="balance">Баланс</string>
+    <string name="orders">Заказы</string>
+
+    <string name="only_mail">Только почта</string>
+    <string name="time_on_line">Время на линии:</string>
+
+    <string name="intercity_mail">Почта межгород</string>
+    <string name="collect_parcels">Собрать посылки</string>
+    <string name="order">За заказы</string>
+    <string name="OrdersPaid">Зарабаток</string>
+    <string name="historyOrder">История заказов</string>
+    <string name="standart">Регион: Стандарт</string>
+    <string name="distance">Дистанся</string>
+    <string name="price">Спосб оплата</string>
+    <string name="transPrice">Заработик денги</string>
+    <string name="commission">Комиссия</string>
+    <string name="open">Открыть</string>
+    <string name="close">close</string>
+    <string name="navigator_settings">Настройка навигатора</string>
+    <string name="place">Место</string>
+    <string name="date">Дата</string>
+    <string name="clock">Время</string>
+    <string name="envelope">Конверт</string>
+    <string name="volume">Объем:</string>
+    <string name="sender">Отправитель</string>
+    <string name="recipient">Получатель</string>
+    <string name="Packages">Посылка</string>
+    <string name="passenger_seat">Пассажирское место</string>
+    <string name="free">Cвободно</string>
+    <string name="offline">Занято офлайн</string>
+    <string name="busyOnline">Занято онлайн</string>
+    <string name="you_line">Вы на линии</string>
+    <string name="baggage">Багаж</string>
+
+    <!-- home main-->
+    <string name="fragment_main_logo_allone">allOne</string>
+    <string name="home_taxi_lb">Такси:</string>
+    <string name="home_postoffice_lb">Посылка:</string>
+    <string name="home_button_line">Войти на линию</string>
+    <string name="home_balance">Баланс:</string>
+    <string name="home_status">Статус:</string>
+    <string name="home_requests_for_tomorrow">Запросы в наличии:</string>
+    <string name="home_rating">Рейтинг:</string>
+
+    <!-- home taxi details-->
+    <string name="home_taxi_details_toolbar">Клиент</string>
+    <string name="home_taxi_details_from">Откуда:</string>
+    <string name="home_taxi_details_where">Куда:</string>
+    <string name="home_taxi_details_mesto">Место:</string>
+    <string name="home_taxi_details_luggage">Багаж</string>
+    <string name="home_taxi_details_date">Дата отправления:</string>
+    <string name="home_taxi_details_date_details">Дата</string>
+    <string name="home_taxi_details_clock">Время</string>
+    <string name="home_taxi_details_btn_accept">Принять</string>
+    <string name="home_taxi_details_btn_back">Назад</string>
+    <!-- home cleint -->
+    <string name="home_taxi_client_toolbar">Клиенты</string>
+    <string name="home_taxi_client_filter_date">Филтр дата</string>
+    <string name="home_taxi_client_filter_clock_date">01 авг 2021</string>
+    <string name="home_taxi_client_bottom_title">Выбранно 4 пасажира</string>
+    <string name="home_taxi_btn_accept">Выбрать</string>
+    <!-- home postOffice-->
+    <string name="home_post_office_toolbar">Посылки</string>
+    <string name="home_post_office_filter_date">Филтр дата</string>
+    <string name="home_post_office_clock">Филтр время:</string>
+    <string name="home_post_office_details">Посылка</string>
+    <string name="home_post_office_posilka">Посылка</string>
+    <!-- home postOfficeDetails-->
+    <string name="home_post_office_details_evalope">Конверт</string>
+    <string name="home_post_office_details_valume">Объем:</string>
+    <string name="home_post_office_details_bag">Сумка 50х50 см</string>
+    <string name="home_post_office_details_price">Цена:</string>
+    <string name="home_post_office_details_from">Откуда:</string>
+    <string name="home_post_office_details__date">Дата отправления</string>
+    <string name="home_post_office_details_date">Дата</string>
+    <string name="home_post_office_details_clock">Время</string>
+    <string name="home_post_office_details_all_price">Общая цена</string>
+    <string name="home_post_office_details_btn_accept">Принять</string>
+    <!--post office in detail-->
+    <string name="home_post_office_in_toolbar">Посылка</string>
+    <string name="home_post_office_in_post_office">Посылка</string>
+    <string name="home_post_office_in_envelope">Конверт</string>
+    <string name="home_post_office_in_valume">Объем</string>
+    <string name="home_post_office_in_bag">Сумка 50x50 см</string>
+    <string name="home_post_office_in_photo_possilce">Фото посылки</string>
+    <string name="home_post_office_in_sender">Отправитель</string>
+    <string name="home_post_office_in_from">Откуда:</string>
+    <string name="home_post_office_in_map">на карте</string>
+    <string name="home_post_office_in_recipient">Получатель</string>
+    <string name="home_post_office_in_where">Куда:</string>
+    <string name="home_post_office_in_date_post">Дата отправления</string>
+    <string name="home_post_office_in_date">Дата</string>
+    <string name="home_post_office_in_clock">Время</string>
+    <string name="home_post_office_in_all_price">Общая цена</string>
+    <string name="home_post_office_in_back">Назад</string>
+    <string name="home_post_office_in_btn_accept">Принять</string>
+
+    <!--home you line-->
+    <string name="home_you_line">Вы на линии</string>
+    <string name="home_you_line_passenger_seat">Пассажирское место</string>
+    <string name="home_you_line_free">Cвободно</string>
+    <string name="home_you_line_offline">Занято офлайн</string>
+    <string name="home_you_line_any">Cвободно</string>
+    <string name="home_you_line_passenger_seat_post">Запросы на посылку</string>
+    <string name="home_you_line_post">Нет \nзапросов</string>
+    <string name="home_you_line_accpent_post">Верхний багаж</string>
+    <string name="home_you_line_bagaj">Посылки</string>
+    <string name="home_you_line_switch">Набор</string>
+    <string name="home_you_line_bgt_back_street">Уйти с линии</string>
+    <string name="home_you_line_btn_put">В путь</string>
+    <string name="home_you_line_btn_luggage">Заполнено</string>
+    <!--dialog add -->
+    <string name="home_dialog_add_person">Посажира</string>
+    <string name="home_dialog_add_mesto">Место:</string>
+    <string name="home_dialog_add_price">Цена</string>
+    <string name="home_dialog_btn_back">Отменить</string>
+    <string name="home_dialog_add_take">Взять</string>
+    <!-- back dialog-->
+    <string name="home_back_dialog_title">Выйти с линии?</string>
+    <string name="home_back_dialog_text">Для выхода с линии свяжитесь с нами</string>
+    <string name="home_back_dialog_tex_sertificat">Тех поддрежка</string>
+    <string name="home_back_dialog_back_btn">Назад</string>
+    <!-- her dialog-->
+    <string name="home_here_dialog_btn_top">Пропустить</string>
+    <string name="home_her_dialalog_tarif">Тариф Cтандарт</string>
+    <string name="home_her_dialog_number_">Номер заказа №22</string>
+    <string name="home_her_dialog_mesto">Желаемое место</string>
+    <string name="home_her_dialog_from">Откуда:</string>
+    <string name="home_her_dialog_date_send">Дата отправления:</string>
+    <string name="home_her_dialog_paymet_fee">Споcоб оплаты</string>
+    <string name="home_her_dialog_cash">Наличные +</string>
+    <string name="home_her_dialog_bunus">бонусы: 10,000</string>
+    <string name="home_her_dialog_bagaj">Багаж</string>
+    <string name="home_her_dialog_obem">Объем</string>
+    <string name="home_her_dialog_bag">Сумка 30х30 см</string>
+    <string name="home_her_dialog_btn_asspent">Принять 09:59</string>
+    <!--order dialog-->
+    <string name="home_order_dialog_title">Онлайн клиент</string>
+    <string name="home_order_dialog_cash">Споcоб оплаты</string>
+    <string name="home_order_dialog_cashback">Наличные + бонусы: 10,000</string>
+    <string name="home_order_dialog_date_send">Дата отправления:</string>
+    <string name="home_order_dialog_mesto">Место</string>
+    <string name="home_order_dialog_location">Локация клиента</string>
+    <string name="home_order_dialog_baggage">Багаж</string>
+    <string name="home_order_dialog_bag">Сумка 50х50 см</string>
+    <string name="home_order_dilaog_obem">Объем</string>
+    <string name="home_order_dialog_price_volume">0 сум</string>
+    <string name="home_order_dialog_btn_client">Отказаться от клиента</string>
+    <string name="home_order_dialog_btn_back">Назад</string>
+    <string name="home_offline_dialog_title">Оффлайн клиент</string>
+    <string name="home_offline_dialog_mesto">Место:</string>
+    <string name="home_offline_dialog_btn_edit">Добавить оффлайн клиент</string>
+    <string name="home_offline_dialog_back_btn">Отказаться от клиента</string>
+    <!-- select dialog-->
+    <string name="home_select_dialog_mesto">Выберите место</string>
+    <string name="home_select_dialog_any">Cвободно</string>
+    <string name="home_select_dialog_vibradno">Выбрано</string>
+    <string name="home_select_dialog_offline">Занято онлайн</string>
+    <string name="home_select_dialog_zaynet">Занято</string>
+    <string name="home_select_dialog_vibratno">Выбрано</string>
+    <!-- woman dialog-->
+    <string name="home_woman_dialog_title">Пассажир женщина?</string>
+    <string name="home_woman_dialog_text">У вас женский тариф. Вы должны перевозить пасажиров только женского пола и детей.</string>
+    <string name="home_woman_btn_back">Назад</string>
+    <string name="home_woman_btn_yes">Да</string>
+
+    <!--home interior map-->
+    <string name="home_interior_map_title">В пути</string>
+    <string name="home_interior_map_line_top">На линии</string>
+    <string name="home_interior_map_zakaz">2 заказа</string>
+    <string name="home_interior_map_btn_back">Уйти с линии</string>
+    <string name="home_interior_map_layout_head_accepted">Стандарт</string>
+    <string name="home_interior_map_layout_head_accepted_order">Заказ №23</string>
+    <string name="home_interior_map_layout_head_accepted_otvas">От вас:</string>
+    <string name="home_interior_map_layout_head_accepted_sposp_oplate">Способ оплаты:</string>
+    <string name="home_interior_map_layout_head_accepted_nalichne">Наличные</string>
+    <string name="home_interior_map_layout_head_accepted_activnost">Активность:</string>
+    <string name="home_interior_map_layout_head_accepted_form">Откуда:</string>
+    <string name="home_interior_map_layout_head_accepted_accpent_btn">Принять</string>
+    <string name="home_interior_map_order_client_naviagtion">Навигация</string>
+    <string name="home_interior_map_order_client_standrat">Стандарт:</string>
+    <string name="home_interior_map_order_client_zakaz"> Заказ №23</string>
+    <string name="home_interior_map_order_client_from">Откуда:</string>
+    <string name="home_interior_map_order_client_nalichnie">Domni boshida magazinda kutib turing</string>
+    <string name="home_interior_map_order_client_otment">Отменить</string>
+    <string name="home_interior_map_order_client_phone">Позвонить</string>
+    <string name="home_interior_map_order_client_help">Помощь</string>
+    <string name="home_interior_map_order_progress_ostalost">Осталось 1.5 км</string>
+
+    <!-- user details fragment-->
+    <string name="home_map_interior_toolbar">Клиент</string>
+    <string name="home_map_interior_location">Локация:</string>
+    <string name="home_map_interior_rating">Рейтинг:</string>
+    <string name="home_map_interior_sposb_oplate">Способ оплаты:</string>
+    <string name="home_map_interior_cash">Наличные</string>
+    <string name="home_map_interior_tariff">Тариф:</string>
+    <string name="home_map_interior_komfort">Комфорт</string>
+    <string name="home_map_interior_jaloba">Жалоба</string>
+    <string name="home_map_interior_call">Позвонить</string>
+    <string name="home_map_interior_write">Написать</string>
+    <string name="home_map_interior_btn_back">Назад</string>
+    <!--user cance order-->
+    <string name="home_interior_cancel_order_toolbar">Отменить заказ</string>
+    <string name="home_interior_cancel_order_text">В случае отмены ваша активность снизится до 87, а уже при 10 наступит блокировка\n\nВаша текушая активность: 95</string>
+    <string name="home_interior_cancel_order_ukajiti_prinsipi">Укажите причины:</string>
+    <string name="home_interior_cancel_order_radio_1">Пункт назначения находится слишком далеко</string>
+    <string name="home_interior_cancel_order_radio_2">Клиент не отвечает на звонки</string>
+    <string name="home_interior_cancel_order_radio_3">Время ожидания клиента превысило 10 минут</string>
+    <string name="home_interior_cancel_order_edit_hint">Введите что-то</string>
+    <string name="home_interior_cancel_order_btn_back">Назад</string>
+    <string name="home_interior_cancel_order_btn_otmenet">Отменить</string>
+
+    <!-- out line-->
+    <string name="home_interior_out_line_dialog_toolbar">На линии</string>
+    <string name="home_interior_out_line_dialog_serebro">Серебро</string>
+    <string name="home_interior_out_line_dialog_reting">Рейтинг выше 4.85 и 50+ отзывов</string>
+    <string name="home_interior_out_line_dialog_brend_car">Брендинг машины</string>
+    <string name="home_interior_out_line_dialog_zolot">Золото</string>
+    <string name="home_interior_out_line_dialog_btn_back">Выйти с линии</string>
+    <!-- out balance-->
+    <string name="home_interior_balance_toolbar">Баланс сегодня</string>
+    <string name="home_interior_balance_zarabota">Заработано</string>
+    <string name="home_interior_balance_commesion">Комиссия</string>
+    <string name="home_interior_balance_view_all_btn">Смотреть все</string>
+
+    <!-- chat item-->
+    <string name="home_interior_chat_edit_hint">Отправить сообщение</string>
+    <string name="home_home_interarie_title">Cбор</string>
+    <string name="home_home_interarie_sekbar_title">Осталось 0 км</string>
+    <string name="home_home_interarie_client" tools:ignore="TypographyFractions">Клиентов: 3/4</string>
+    <string name="home_home_interarie_post">Посылок: 3/7</string>
+    <string name="home_home_interarie_btn_zabrit">Поехали к клиенту</string>
+    <string name="home_home_interarie_btn_zabershit">Завершить</string>
+    <!-- post dialog-->
+    <string name="home_map_interarie_dialog_date">Время отправления</string>
+    <string name="home_map_interarie_clock">Время прибытия</string>
+    <string name="home_map_interarie_post">Посылки (4)</string>
+    <string name="home_map_interarie_view_all_post">Посмотреть историю поездки</string>
+    <string name="home_map_interarie_poezdki">О поездке</string>
+    <string name="home_map_interarie_btn_zavershit">Завершить</string>
+    <!-- interarie about fragment-->
+    <string name="home_interarie_about_title">О поездке</string>
+    <string name="home_interarie_about_nuber_order">Номер заказа</string>
+    <string name="home_interarie_about_from">Откуда:</string>
+    <string name="home_interarie_about_where">Куда:</string>
+    <string name="home_interarie_about_distance">Дистанся</string>
+    <string name="home_interarie_about_tariff">Тариф</string>
+    <string name="home_interarie_about_zarabatok_taxi">Заработок от такси</string>
+    <string name="home_interare_about_client">Клиенты</string>
+    <string name="home_interarie_about_zarabatok_post">Заработок от посылки</string>
+    <string name="home_interarie_about_zarabatok_btn">Вернуться на главную</string>
+    <!-- home interarei fragment post-->
+    <string name="home_interarie_fragment_post_title">Посылка №2</string>
+    <string name="home_interarie_fragment_post_posillka">Посылка</string>
+    <string name="home_interarie_fragment_post_number">Номер заказа:</string>
+    <string name="home_interarie_fragment_post_price">Цена:</string>
+    <string name="home_interare_fragment_post_volume">Объем</string>
+    <string name="home_interare_fragment_post_bag">Сумка 50x50 см</string>
+    <string name="home_interare_fragment_post_foto_send">Фото посылки</string>
+    <string name="home_interare_frament_post_sender">Отправитель</string>
+    <string name="home_interare_fragment_post_from">Откуда:</string>
+    <string name="home_interare_fragment_post_where">Куда:</string>
+    <string name="home_interare_post_fragment_date_send">Дата поездки</string>
+    <string name="home_interare_fragment_post_date">Дата</string>
+    <string name="home_interare_fragment_post_clock">Время</string>
+    <string name="home_interare_fragment_post_btn">Назад</string>
+    <string name="home_interare_fragment_list_details">Клиенты</string>
+    <!--clinet inteare fragment-->
+    <string name="home_interare_clinet_toolbar">Клиент</string>
+    <string name="home_interare_cliner_from">Откуда:</string>
+    <string name="home_interare_clinet_where">Куда:</string>
+    <string name="home_interare_clinet_mesto">Место:</string>
+    <string name="home_interare_clinet_bagash">Багаж</string>
+    <string name="home_interare_clinet_date_send">Дата отправления:</string>
+
+    <!-- call dialog-->
+    <string name="home_interior_dialog_call_btn">Позвонить клиенту</string>
+    <string name="home_interior_dialog_call_btn_back">Назад</string>
+    <!-- info dialog-->
+    <string name="home_interior_info_dialog_help">Помощь</string>
+    <string name="home_interior_info_dialog_text">Если возникли проблемы, свяжитесь с нами:</string>
+    <string name="home_interior_info_dialog_operator">Оператор</string>
+    <string name="home_interior_info_dialog_telegram">Telegram</string>
+    <string name="home_interior_info_dialog_btn_back">Назад</string>
+
+
+    <!--balance page-->
+    <string name="fragment_balance">Баланс</string>
+    <string name="fragment_balance_bunus">Бонусные баллы:</string>
+    <string name="fragment_balance_kak_poluchat">Как получить?</string>
+    <string name="fragment_balance_number_chyot">Номер сцёта</string>
+    <string name="fragment_balance_add_card">Привязать карту</string>
+    <string name="fragment_balance_history_order">Добавить карту</string>
+    <string name="fragment_balance_puluchit_balance">Пополнить баланс</string>
+    <string name="fragment_balance_payme">Оплата через Payme</string>
+    <string name="fragment_balance_paynet">Оплата через Paynet</string>
+    <string name="fragment_balance_apelsin">Оплата через Apelsin</string>
+    <string name="fragment_balance_click">Оплата через Click</string>
+    <string name="fragment_balance_id_chot">Оплата картой</string>
+    <string name="fragment_balance_title">Баланс</string>
+
+    <!-- payme section-->
+    <string name="fragment_balamce_payme_toolbar">ID-счёт</string>
+    <string name="fragment_balamce_payme_number_shot">Ваш номер счета:</string>
+    <string name="fragment_balamce_payme_nomer">Номер счета:</string>
+    <string name="fragment_balamce_payme_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed neque enim, id senectus etiam. Ut sed viverra senectus ut accumsan in tempor</string>
+
+    <!-- myCard-->
+    <string name="fragment_balance_my_card_toolbar">Карта</string>
+    <string name="fragment_balamce_my_card_title">Привязанная карта</string>
+    <string name="fragment_balance_my_card_number_card">Номер карты</string>
+    <string name="fragment_balance_my_card_srok">Срок действия</string>
+    <string name="fragment_balance_my_card_remove_btn">Удалить</string>
+    <!-- balance add card-->
+    <string name="fragment_balance_add_card_toolbar">За месяц</string>
+    <string name="fragment_balance_add_card_add_card_title">Введите данные карты</string>
+    <string name="fragment_balance_add_card_number_card">Номер карты</string>
+    <string name="fragment_balance_add_card_srok_date">Срок действия</string>
+    <string name="fragment_balance_add_card_btn_add_card">Привязать карту</string>
+    <string name="order_fragment_title">Активные заказы</string>
+    <!-- order fragment-->
+    <string name="fragment_order_bottom_posilok">Посылок: 7</string>
+    <string name="fragment_order_bottom_right_lb">На сегодня: 2</string>
+    <string name="fragment_order_bottom_collect_parcels">Собрать посылки</string>
+    <!--order details-->
+    <string name="order_details_toolbar">Клиент</string>
+    <string name="order_detail_foto_bag">Фото багаж</string>
+    <string name="order_details_date_send">Дата поездки</string>
+    <string name="order_detail_price">Цена</string>
+    <!--order post-->
+    <string name="order_post_title">Посылка</string>
+    <string name="order_post_post">Посылка</string>
+    <string name="order_post_bag">Сумка 50x50 см</string>
+    <string name="order_post_foto_send">Фото посылки</string>
+    <string name="order_post_date_post">Дата поездки</string>
+    <string name="order_post_price">Цена</string>
+
+    <!--profile page-->
+    <string name="profile_toolbar">Профиль</string>
+    <string name="profile_Active">Активность</string>
+    <string name="profile_interest_rate">Процентная ставка</string>
+    <string name="profile_level">Уровень</string>
+    <string name="profile_bronza">Бронза</string>
+    <string name="profile_transport">Транспорт</string>
+    <string name="profile_earning_toolbar">Заработок</string>
+    <string name="profile_balance">Баланс</string>
+    <string name="profile_language">Язык</string>
+    <string name="profile_settings">Настройки</string>
+    <string name="profile_support">Тех поддержка</string>
+    <string name="profile_entrance">Вход</string>
+    <!--profile lang-->
+    <string name="profile_lang_language">Язык</string>
+    <string name="profile_lang_english">English</string>
+    <string name="profile_lang_russian">Русский</string>
+    <string name="profile_lang_uzbek">O’zbek</string>
+    <!-- profile tarif-->
+    <string name="profile_tarifs_toolbar">Тарифы</string>
+    <string name="profile_tariff_inside">Внутри городской пакет</string>
+    <string name="profile_tarif_inside_of_city">Такси внутри города</string>
+    <string name="profile_tarif_mail_inside">Почта внутри города</string>
+    <string name="profile_tarif_setting">Настроить</string>
+    <string name="profile_tarif_close">Включить</string>
+    <string name="profile_tarif_regional_tariff">Региональный пакет</string>
+    <string name="profile_tarif_international_taxi">Международный такси</string>
+    <string name="profile_tariff_international_mail">Междгородская почта</string>
+    <string name="profile_tarif_international_tariff">Международный пакет</string>
+    <!-- profile tarif plans-->
+    <string name="profile_tarrif_plans_toolbar">Тарифы</string>
+    <string name="profile_tarif_plan_economic">Эконом</string>
+    <string name="profile_tarif_plan_comfort">Комфорт</string>
+    <string name="profile_tarif_plans_women">Женский</string>
+    <string name="profile_tarif_plans_delivery">Доставка</string>
+    <!-- profile transport-->
+    <string name="profile_transport_toolbar">Карта</string>
+    <!-- profile transport details-->
+    <string name="profile_transport_details_toolbar">Транспорт</string>
+    <string name="profile_transport_details_marka">Марка авто:</string>
+    <string name="proifle_transport_details_color">Цвет:</string>
+    <string name="profile_transport_details_color_change">Белая</string>
+    <string name="profile_transport_details_number">Номер:</string>
+    <string name="profile_transport_details_year">Год:</string>
+    <string name="profile_transport_details_date_registr">Дата регистрации</string>
+    <string name="profile_transport_details_srok_lintsence">Срок лицензии</string>
+    <string name="profile_transport_details_nomer_lintsence">Номер Техпаспорта:</string>
+    <string name="profile_transport_details_tarif">Тарифы:</string>
+    <string name="profile_transport_details_tarif_type">Комфорт, Эконом, Премиум</string>
+    <string name="profile_transport_details_foto_send">Фото такси</string>
+    <!-- region profile-->
+    <string name="profile_tarif_region_toolbar">Регион: Стандарт</string>
+    <string name="profile_tarif_region_nomer">Номер заказа</string>
+    <string name="profile_tarif_region_date">Дата:</string>
+    <string name="profile_tarif_region_tarif">Тариф</string>
+    <string name="profile_tarif_region_taxi_zarabatok">Заработок от такси</string>
+    <string name="profile_tarif_region_post">Заработок от посылки</string>
+    <string name="profile_tarif_region_client">Клиенты</string>
+    <!-- history-->
+    <string name="profile_tarif_history_toolbar">История</string>
+    <string name="profile_tarif_history_client_card">Карта клиента:</string>
+    <string name="profile_tarid_history_driver_card">Карта водителя:</string>
+    <string name="profile_tarif_hostory_driver_card">Карта водителя:</string>
+    <string name="profile_tarif_history_departure_date">Дата отбытия:</string>
+    <string name="profile_tarif_hisotory_passengers">Пасажиров</string>
+    <!-- tarif history details-->
+    <string name="proifle_history_details_toolbar">Регион: Посылка</string>
+    <string name="profile_history_details_order">За заказы</string>
+    <string name="profile_tarif_history_details_pos">Посылка:</string>
+    <string name="profile_tarif_history_details_transPrice">Заработик денги</string>
+    <string name="profile_tarif_history_details_commission">Комиссия</string>
+    <!-- profile city-->
+    <string name="profile_city_toolbar">Город: Стандарт</string>
+    <string name="profile_city_order">Номер заказа</string>
+    <string name="profile_city_oplate">Способ оплаты:</string>
+    <string name="prolfie_city_zarabatok">Заработок</string>
+    <string name="profile_city_commission">Комиссия</string>
+    <string name="profile_history_toolbar">История заказов</string>
+    <!-- profile earning-->
+    <string name="profile_earning_general">Общий</string>
+    <string name="profile_earnig_from_parcels">От посылок</string>
+    <string name="profile_earning_today">За Сегодня</string>
+    <string name="profile_earning_orders">2 заказ</string>
+    <string name="profile_earning_order">За заказы</string>
+    <string name="profile_earning_commsion_allone">Комисся AllOne</string>
+    <!-- profile setting-->
+    <string name="settings_fragment_toolbar">Настройки</string>
+    <string name="fragment_setting_change_location">Изменить постоянный маршрут</string>
+    <string name="profile_setting_tariffs">Тарифы</string>
+    <string name="profile_setting_navigator_settings">Настройка навигатора</string>
+    <string name="profile_setting_show_card_in_new_order">Показать карту в новом заказе</string>
+    <string name="profile_setting_voice_notification">Голосовое уведомление</string>
+    <string name="profile_setting_payment_methods">Способы оплаты</string>
+    <string name="profile_setting_about_app">О приложении</string>
+    <!--profile route -->
+    <string name="profile_setting_route_toolbar">Куда едим?</string>
+    <string name="profile_setting_route_lorem_ipsum">Lorem ipsum dolor sit amet Ut sed viverra senectus ut accumsan in tempor</string>
+    <!--profile region selected-->
+    <string name="profile_setting_region_selected">Куда едим?</string>
+    <string name="profile_setting_regigion_selected_title">Выберите город</string>
+    <!--profile setting naviagtion-->
+    <string name="profile_setting_navigator_toolbar">Навигаторы</string>
+    <string name="profile_setting_navigator_google_maps">Google Maps</string>
+    <string name="profile_setting_navigator_geo">bGEO</string>
+    <string name="profile_setting_navigator_citi">СитиГИД</string>
+    <string name="profile_setting_navigator_gis">2GIS</string>
+    <string name="profile_setting_navigator_yandex">Yandex.Navigator</string>
+    <string name="profile_setting_navigator_maps_me">Maps.me</string>
+    <string name="profile_setting_navigator_waze">Waze</string>
+    <!-- setting money-->
+    <string name="profile_setting_money_toolbar">Способы оплаты</string>
+    <string name="profile_setting_money_Cash">Наличние</string>
+    <string name="profile_setting_money_Corporate">Корпоративный</string>
+    <string name="profile_setting_money_Payme">С картой</string>
+    <string name="profile_setting_about_title">О приложении</string>
+    <string name="profile_setting_about_text_name">Лицензионное \nсоглашение</string>
+    <string name="profile_setting_about_infoApp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue quis facilisi congue fames viverra. Cursus arcu placerat ipsum at. Pharetra leo nisi, auctor viverra consectetur proin sed morbi. Vulputate adipiscing augue eget volutpat fermentum, lacus ac, suspendisse. Scelerisque vitae ut integer mi odio eu, dignissim est consectetur. In lacinia leo duis eget.
+Dignissim faucibus ac risus id leo suspendisse viverra. Porta nulla egestas maecenas gravida at scelerisque turpis erat. Mi tellus neque cras viverra tellus. Quis viverra nibh orci nisi. Vulputate sed congue nisi morbi lacus nulla duis. Nisi bibendum tincidunt ut lorem lectus habitasse non. Donec vel velit gravida nisi, arcu quis integer sagittis, et. Eu dolor eu blandit mi. Dignissim et urna, mollis tristique. Id suspendisse nec nulla a urna leo elit. Nulla suscipit ipsum vestibulum tristique aenean lacus, ac aliquam, justo. Lacus venenatis ut dictumst morbi turpis maecenas consectetur ut.
+Egestas pretium ut morbi sed cursus varius eget fames bibendum. Nunc facilisis amet curabitur montes, et aliquet nunc. Tristique in elementum eu commodo, est risus, ut aenean etiam. At sagittis hac ipsum lacus, non, aliquam ipsum urna velit. Consequat porttitor massa faucibus et. Dolor viverra ut ultrices mattis. Eu, nullam tellus ultrices volutpat pretium felis sit. Blandit donec arcu, feugiat enim nibh faucibus.
+</string>
+    <string name="profile_date_dialog_title">Выберите время</string>
+    <string name="profile_date_dialog_ot">От</string>
+    <string name="profile_date_dialog_do">До</string>
+    <string name="generate_toolbar_tiitle">Локация клиента</string>
+
+    <!--login pages-->
+    <string name="fragment_login_phone_sms" tools:ignore="Typos">Наш номер номер придёт СМС с кодом подверждение</string>
+    <string name="phoneNumber">Номер телефона</string>
+    <string name="fragment_home_balance">Баланс</string>
+    <string name="fragment_home_active">Активность</string>
+
+    <!--Home direction -->
+    <string name="fragment_home_diractions_toolbar">Выберите направление</string>
+    <string name="fragment_home_directions_btn">Продолжить</string>
+    <!--home direction city-->
+    <string name="fragment_diraction_region_title">Выберите направление</string>
+    <string name="fragment_diraction_region_btn">Выйти на линию</string>
+
+    <!--home direction inter area post and taxi details-->
+    <string name="fragment_inter_area_post_details_spon">Споcоб оплаты:</string>
+    <string name="fragment_inter_area_post_details_nalichnie">Наличные +</string>
+    <string name="fragment_inter_area_client_luggage">С верхним багажом</string>
+    <string name="fragment_inter_area_client_bagaj">Багаж:</string>
+    <string name="fragment_inter_area_spob_price">Споcоб оплаты:</string>
+    <string name="fragment_inter_area_client_author_phone">Заказать для другого:</string>
+    <string name="fragment_inter_area_comment_comment">Комментарий для водителя:</string>
+    <string name="fragment_inter_area_add_client_toolbar">Cбор</string>
+    <string name="fragment_inter_area_add_btn">Поехали</string>
+
+    <!--inter area post details-->
+    <string name="fragment_inter_area_export_text">Отправитель</string>
+    <string name="fragment_inter_area_details_luggage">С верхним багажом</string>
+    <string name="fragment_inter_area_post_comment">Комментарий для водителя:</string>
+    <string name="fragment_inter_area_post_price">Споcоб оплаты:</string>
+
+    <!--inter area post and taxi details-->
+    <string name="fragment_inter_area_post_details_inport">Получатель</string>
+    <string name="fragment_inter_area_post_from">Куда:</string>
+    <string name="fragment_inter_area_from">Куда:</string>
+    <string name="fragment_inter_area_taxi_seat">Место:</string>
+    <string name="fragment_inter_area_luggage">Багаж:</string>
+    <string name="fragment_inter_area_taxi_details_price">Споcоб оплаты:</string>
+    <string name="fragment_inter_area_taxi_details_author_number">Заказать для другого:</string>
+
+
+    <string name="fragment_maps_client_order_details">Подробнее о заказе</string>
+    <string name="fragment_maps_client_chat">Чать</string>
+    <string name="fragment_post_compile_details">Номер заказа:</string>
+    <string name="fragment_post_details_btn_send">Передал</string>
+
+    <!--profitable fragment-->
+    <string name="fragment_profitable_toolbar">Вы прибыли</string>
+    <string name="fragment_profitable_export_date">Время отправления</string>
+    <string name="fragment_profitable_inport_date">Время прибытия</string>
+    <string name="fragment_profitable_btn_finished">Завершить</string>
+
+    <!--post details -->
+    <string name="fragment_post_details_date">C</string>
+    <string name="fragment_post_details_to_date">По</string>
+    <string name="fragment_post_details_last_date">Дата отправления</string>
+    <string name="fragment_taxt_detail_free">Бесплатно</string>
+
+    <!--real post-->
+    <string name="fragment_real_post_date_send">Дата отправления</string>
+    <string name="fragment_real_post_btn_cancel">Отменить заказ</string>
+
+    <!--active order-->
+    <string name="fragment_active_order_from_location">Откуда (Локация клиента):</string>
+    <string name="fragment_active_order_btn_cancel">Отменить заказ</string>
+    <string name="fragment_active_order_btn_accept">Забрать клиента</string>
+    <string name="fragment_active_post_accept">Забрать посылку</string>
+
+    <!--earning-->
+    <string name="fragment_profile_earning_day_toolbar">За день</string>
+    <string name="fragment_profile_earning_day_order">От Такси</string>
+    <string name="fragment_profile_earning_day_post">От посылок</string>
+    <string name="fragment_profile_earning_day_title_day">Сегодня</string>
+
+    <!--earning-->
+    <string name="fragment_earning_weeek_toolbar">Заработок</string>
+    <string name="fragment_aerning_commnet">После вычета комиссии</string>
+    <string name="fragment_earning_all_order">Выполнено заказов</string>
+    <string name="fragment_eraning_all_distance">Пробег</string>
+    <string name="fragment_all_commision">Комиссия AllOne</string>
+    <string name="fragment_earning_stafka">Ставка: 10%</string>
+    <string name="fragment_eraning_details">Подробнее</string>
+    <string name="fragment_earning_week">За эту неделю</string>
+    <string name="fragment_earning_mouth">За этот месяц</string>
+
+    <!--fragment profile-->
+    <string name="fragment_profile_first">Ваш ID</string>
+    <string name="fragment_profile_first_status">Ваш уровен</string>
+    <string name="fragment_profile_earning">Заработок</string>
+    <string name="fragment_profile_balance">Мои карты</string>
+    <string name="fragment_profile_transport">Транспорт</string>
+    <string name="fragment_profile_language">Язык</string>
+    <string name="fragment_profile_night">Ночной режим</string>
+    <string name="fragment_profile_setting">Настройки</string>
+    <string name="fragment_profile_first_support">Служба поддержки</string>
+    <string name="fragment_profile_first_exit">Выйти из профиля</string>
+    <string name="fragment_about_first">Лицензионное соглашение</string>
+    <string name="fragment_about_first_politics">Политика конфиденциальности</string>
+
+    <!--setting-->
+    <string name="fragment_setting_navigator">Навигатор</string>
+    <string name="fragment_add_card_toolbar">Привязать карту</string>
+
+    <!--add balance-->
+    <string name="fragment_balance_sort_card">Название карты</string>
+    <string name="fragment_balance_add_sms_code">Такая карта отсуствует</string>
+    <string name="fragment_balance_add_send_code">Получить код</string>
+    <string name="fragment_balance_title_1">Введите код-пароль</string>
+    <string name="fragment_balance_title_2">На ваш номер +998 90 *** ** 15 \nотправлен SMS с кодом</string>
+    <string name="fragment_balance_not_code">Неверный код</string>
+    <string name="fragment_balance_return_send">Оправить заново</string>
+    <string name="fragment_balance_history_toolbar">История пополнения</string>
+
+    <!--fragment success-->
+    <string name="fragment_success_title">Успешно оплачено</string>
+    <string name="fragment_order_success">Вернуться</string>
+    <string name="fragment_success_order_history">История пополнения</string>
+
+    <!--send card-->
+    <string name="fragment_read_balance_toolbar">Пополнить баланс</string>
+    <string name="fragment_read_balance_price">Cумма</string>
+    <string name="fragment_read_balance_price_hint">18 000 сум</string>
+    <string name="fragment_read_balance_min_price">Мин. 1000 сум</string>
+    <string name="fragment_read_balance_selected">Выберите карту</string>
+    <string name="fragment_read_balance_add_card">+ Новая карта</string>
+    <string name="fragment_read_balance_send">Оплатить</string>
+
+    <!--dialog socket-->
+    <string name="dialog_socket_btn_cancel">Пропустить</string>
+    <string name="dialog_socket_woman_title">Вы должны принимать пассажиров только женского пола и детей</string>
+    <string name="dialog_woman_mesto">Желаемое место:</string>
+    <string name="fragment_dialog_balance_iscative">Сделать основной</string>
+    <string name="dialog_balance_update">Название карты</string>
+    <string name="dialog_balance_remove_card">Удалить</string>
+    <string name="dialog_finish_order">Не все посылки переданы</string>
+    <string name="dialog_finish_text">Чтобы завершить поездку, передайте все посылки</string>
+    <string name="dialog_inter_area_title">Итого к оплате</string>
+    <string name="dialog_inter_area_poezdka">Поездка:</string>
+    <string name="dialog_inter_area_waint">Ожидание:</string>
+    <string name="cargo_des_title">Ожидание:</string>
+    <string name="dialog_inter_area_all">Итого:</string>
+    <string name="dialog_inter_area_price">Способ оплаты:</string>
+    <string name="dialog_inter_area_btn_qr_code">QR счёт</string>
+    <string name="dialog_inter_area_btn_cancel">Закрыть</string>
+
+    <!--cancel dialog-->
+    <string name="dialog_cancel_title">Клиент №3 вы отвезли ?</string>
+    <string name="dialog_cancel_yes_btn">Да</string>
+    <string name="dialog_cancel_details_title">Для отмены свяжитесь с нами</string>
+    <string name="dialog_cancel_details_order_count">Номер заказа</string>
+    <string name="dialog_cancel_details_operator">Оператор</string>
+    <string name="dialog_cancel_details_telegram">Telegram</string>
+    <string name="dialog_change_seat">Изменить место</string>
+    <string name="dialog_add_order">Добавить посажира?</string>
+    <string name="dialog_add_order_otmenet">Отменить</string>
+    <string name="dialog_balance_delete_title">Удалить карту?</string>
+    <string name="dialog_balance_update_title">Изменить</string>
+    <string name="dialog_balance_update_type">Название карты</string>
+    <string name="fragment_inter_area_go_toolbar">В пути</string>
+    <string name="job_title">Режимы работы</string>
+    <string name="home_woman_dialog_title_tariff">Женский тарифы</string>
+    <string name="home_woman_dialog_tariff_title">Вам потребуется пройти проверку в наших центрах</string>
+
+    <string name="band">Занято</string>
+    <string name="driver_name_first">имя водителя</string>
+    <string name="driver_number">номер водителя</string>
+    <string name="post_title">Посылка</string>
+    <string name="smsBack">Вход</string>
+    <string name="home_you_line_online">Занято онлайн</string>
+    <string name="balance_avtive">ОCНОВНАЯ</string>
+    <string name="dis_connected">Чтобы уйти с линии, вам нужно отменить вса заказы</string>
+
+    <string name="cancel_last_title">Вы уверены?</string>
+    <string name="home_cancel_last_text">В случае отмены 5-ти заказов в сутки ваш профиль блокируется.</string>
+    <string name="junatmalarni_olish">Забрал посылку</string>
+    <string name="fragment_balance_history_order_xxx">История платежей</string>
+
+    <string name="urent_title">Ваши преимущества</string>
+    <string name="ureven_1">При достижении этого уровня, вам начисляется начисляется 100 000 сум для дальнейшего пользования нашим сервисом такси.</string>
+    <string name="ureven_2">При достижении этого уровня, вам начисляется 500 000 сум для дальнейшего пользования нашим сервисом такси.</string>
+    <string name="ureven_3">При достижении этого уровня, вам начисляется КэшБэк в размере 10% при каждой вашей пополнении баланса.</string>
+    <string name="ureven_4">При достижении этого уровня, вам начисляется КэшБэк в размере 11% при каждой вашей пополнении баланса.</string>
+    <string name="ureven_5">При достижении этого уровня, вам начисляется КэшБэк в размере 12% при каждой вашей пополнении баланса.</string>
+    <string name="ureven_6">При достижении этого уровня, вам начисляется КэшБэк в размере 15% при каждой вашей пополнении баланса.</string>
+
+    <string name="bronza">Бронза</string>
+    <string name="oltin">Золото</string>
+    <string name="kumush">Серебро</string>
+    <string name="ureven">уровень</string>
+    <string name="junatmalarni_olish_cancel">Отменить заказ</string>
+    <string name="errorTitle">Укажите причину отмены</string>
+    <string name="bzyat_offline_clinet">Взять</string>
+    <string name="operator">Operator</string>
+    <string name="telegram">Telegram</string>
+    <string name="address">Address</string>
+    <string name="allone_1_0_1_1">AllOne 1.0.1(1)</string>
+    <string name="notanish_haydovchi">Notanish haydovchi</string>
+    <string name="admin">Admin :</string>
+    <string name="siz_ro_yxatdan_o_tmagansiz_ro_yxatdan_o_tish_uchun_admin_bilan_bog_laning">Siz ro\'yxatdan o\'tmagansiz! Ro\'yxatdan o\'tish uchun admin bilan bog\'laning</string>
+    <string name="qo_ng_iroq_qilish">Qo\'ng\'iroq qilish</string>
+    <string name="telegramga_o_tish">Telegramga o\'tish</string>
+    <string name="ko_rish">Ko\'rish</string>
+    <string name="divider">|</string>
+    <string name="place_holder">У вас ест 3 новых заказов!</string>
+    <string name="notification_place_holder">У вас новый заказ!</string>
+    <string name="place_hoolder_2">Пожалуйста, примите/отмените заказы! После 3 х минут заказы будут автоматически отменены!</string>
+    <string name="new_order_text">Новые заказы</string>
+    <string name="notification_acitivity_empty_text">Sizda hech qanday yangi buyurtma mavjud emas!</string>
+    <string name="notification_tariff_txt">Региональный режим</string>
+    <string name="notif_fragment_empty_txt">Hech qanday bildirishnoma yo\'q!</string>
+    <string name="canceled_order_text">Извините, ваш заказ был отменен клиентом.</string>
+    <string name="understang">Tushunarli</string>
+    <string name="complete_ride_dialog_string">Yakunlashdan oldin barcha yo\'lovchilarni manziliga yetkizishingiz zarur!</string>
+    <string name="skip">Пропустить</string>
+    <string name="rate">Oценка</string>
+    <string name="about_ride">О поездке</string>
+    <string name="request_permission">запрос разрешения</string>
+    <string name="wait_client">Ожидание клиента:</string>
+    <string name="end_ride">Завершить</string>
+    <string name="pickup_location">Адрес получения:</string>
+    <string name="setting">Настроить</string>
+    <string name="where_from">Откуда (Локация клиента):</string>
+    <string name="came">Мы прибыли</string>
+    <string name="place_inter">Место:</string>
+    <string name="free_inter">Бесплатно</string>
+    <string name="rate_pass">Оцените пользователя</string>
+    <string name="download">Iltimos davom ettirish uchun navigatsiya ilovalaridan birini yuklab oling!</string>
+    <string name="download_navi">Yuklab oling</string>
+    <string name="shahar_taksi_rejimida_liniyaga_chiqish_uchun_balansingizda_mablag_yetarli_emas_iltimos_balansingizni_to_ldiring">Shahar taksi rejimida liniyaga chiqish uchun balansingizda mablag\' yetarli emas. Iltimos balansingizni to\'ldiring.</string>
+    <string name="location_request_info">Эта программа использует ваше местоположение, чтобы узнать, где вы находитесь, когда клиент заказывает такси, даже если программа закрыта, чтобы найти ближайшее такси к клиенту.</string>
+    <string name="permission">Разрешение</string>
+    <string name="viloyatlararo_taksi">Viloyatlararo taksi</string>
+    <string name="shahar_taksi">Shahar taksi</string>
+    <string name="for_one_customer">С каждого пассажира 5000 сум</string>
+    <string name="go_to_parcel">Поехали к посылку</string>
+    <string name="no_parcels">Посылок пока нет!</string>
+    <string name="blocked_account_txt">Вы не можете выйти на линию. Чтобы снять блокировку свяжитесь \nс нами!</string>
+    <string name="your_profile_blocked">Ваш профиль заблокирован!</string>
+    <string name="tez_orada">Tez orada</string>
+    <string name="open_navigator">Open Navigator</string>
+    <string name="your_navigator">Your navigator: Google Map</string>
+    <string name="dismiss">Пропустить</string>
+    <string name="theme_setting">Theme setting</string>
+    <string name="auto">Auto</string>
+    <string name="day">Day</string>
+    <string name="night">Night</string>
+    <string name="theme_change">Theme Change</string>
+    <string name="place_change_theme">Sizning mavzuyingiz avtomatik qilib sozlangan. Hozir soat 12.20 siz mavzuni kunduzgi qilib o\'rnatasizmi</string>
+    <string name="change">O\'zgartirish</string>
+    <string name="client">Mijoz:</string>
+    <string name="profile_sing_out">Haqiqatdan ham profildan chiqishni xohlaysizmi?</string>
+    <string name="update_title">Доступна новая версия!</string>
+    <string name="des_update_layout">Пожалуйста, обновите приложение до последней версии</string>
+    <string name="update">Обновить</string>
+    <string name="location_permission_title" />
+    <string name="switch_on_gps">Switch on GPS</string>
+    <string name="gps_des">GPS выключен. Включите GPS, иначе мы не будем знать, где вы находитесь.</string>
+    <string name="internet_Des">Internetga ulanmagan.</string>
+    <string name="refresh">Refresh</string>
+    <string name="no_order">No orders</string>
+    <string name="pause">Ждать</string>
+    <string name="no">Heт</string>
+    <string name="rostan_yo_lga_chiqmoqchimisiz">Rostan yo\'lga chiqmoqchimisiz?</string>
+    <string name="single_order">single</string>
+    <string name="online_registratsiya">Online registratsiya</string>
+
+
+    <!--    for learning page////-->
+    <string name="tv_choose_region">\"Viloyatlar aro taksi\" yoki \"Shahar taksi\" yo\'nalishlaridan birini tanlang</string>
+    <string name="tv_choose_setting">Sozlash bo\'limidan kerakli bo\'limlarni tanlang</string>
+    <string name="tv_begin_practice">Amaliyotni boshlash uchun Shahar ichida rejimi tugmasini bosing</string>
+    <string name="tv_continue_practice">Amaliyotni davom ettirish uchun \"Liniyaga qaytish\" tugmasini bosing</string>
+    <string name="tv_line_go">Liniyaga chiqish tugmasini bosish orqali liniyaga chiqing</string>
+    <string name="str_home_btn">Amaliyotni boshlash uchun \"Liniyaga chiqing\" tugmasini bosing</string>
+    <string name="tv_str_plan">\"Viloyatlararo qatnov\" ni ustiga bosib rejimni tanlang</string>
+    <string name="str_choose_direction_to_sam">Qaysi manzilga borishni tanlang va \"Liniyaga chiqish\" tugmasini bosing</string>
+    <string name="str_choose_direction_main">Kerakli yo\'nalishni tanlang va \"Davom eting\"</string>
+    <string name="str_new_order">Sizda yangi buyurtma bor qabul qilish uchun ustiga bosing</string>
+    <string name="str_new_order_click">Buyurtmani ko\'rish uchun ustiga bosing</string>
+    <string name="str_bottom_sheet">Buyurtmani vaqti tugab qolmasdan qabul qiling</string>
+    <string name="str_in_road_busy">Yo\'lovchilar o\'rindiqlari band qilindi endi \"Yo\'lga chiqish\" tugmasini bosing</string>
+    <string name="str_get_passenger">Yo\'lovchilarni olish uchun \"Mijoz N7057\" ni ustiga bosing</string>
+    <string name="str_get_passenger_done">Yo\'lovchilarni oldingiz endi ularni manziliga yetkazish uchun \"Ketdik\" ni bosing. Oq yo\'l!</string>
+    <string name="str_tariff">Kerakli tariflarni yoqib ortga qayting</string>
+
+    <!--home-->
+    <string name="get_on_line" translatable="false">Liniyaga chiqing</string>
+    <string name="driver_name">Davronbek Sherg\'oziyev</string>
+    <string name="home_offline">offline</string>
+    <string name="str_home_balance">Balans</string>
+    <string name="home_activity">Faoliyat</string>
+    <string name="amount_of_money">800 360 sum</string>
+    <string name="amount_of_activity">100</string>
+    <string name="home_regional">Viloyatlararo qatnov</string>
+    <string name="home_region_desc">To\'liq salon,Standart,Yetkazib berish xizmati</string>
+    <string name="home_str_main">Asosiy</string>
+    <string name="home_orders">Buyurtmalar</string>
+    <string name="home_profile">Profil</string>
+    <string name="home_five">5</string>
+    <string name="plan_of_work">Ish rejimi</string>
+    <string name="regional_taxi">Viloyatlararo taksi</string>
+    <string name="plan_of_work_setting">Sozlash</string>
+    <string name="city_taxi">Shahar taksi</string>
+    <string name="city_taxi_desc">Komfort, Oziq-ovqat, Ekonom, Yetkazib berish</string>
+    <string name="plan_of_work_save">Davom eting</string>
+    <string name="setting_delivery">Yetkazib berish xizmati</string>
+    <string name="setting_tariffs">Tariflar</string>
+    <string name="setting_standard">Standart</string>
+    <string name="women_taxi">Xonimlar tarifi</string>
+    <string name="full_salon">To\'liq salon</string>
+    <string name="choose_direction">Yo\'nalishni tanlang</string>
+    <string name="tashkent_city">Toshkent shahri</string>
+    <string name="samarkand_region">Samarqand viloyati</string>
+    <string name="str_continue">Davom eting</string>
+    <string name="from_tashkent">A nuqta: Toshkent shahri</string>
+    <string name="from_samarkand">B nuqta: Samarqand viloyati</string>
+    <string name="oqdaryo_region">Oqdaryo tumani</string>
+    <string name="payariq_region">Payariq tumani</string>
+    <string name="on_way">Yo\'ldasiz</string>
+    <string name="str_passenger_seat">Yo\'lovchining o\'rindig\'i</string>
+    <string name="str_busy">Bo\'sh</string>
+    <string name="offline_order">Offline buyurtma</string>
+    <string name="online_order">Online buyurtma</string>
+    <string name="high_load">Yuqori yuk</string>
+    <string name="gathering">Yig\'ilmoqda</string>
+    <string name="parcels">Jo\'natma</string>
+    <string name="pieces_0">0 dona</string>
+    <string name="in_road_on_way">Yo\'lga chiqish</string>
+    <string name="exit_line">Liniyadan chiqish</string>
+    <string name="new_order">Sizda 1 ta yangi buyurtma bor!</string>
+    <string name="new_order_desc">Iltimos, buyurtmalarni qabul qiling/bekor qiling! 3 daqiqadan so\'ng buyurtmalar avtomatik ravishda bekor qilinadi1</string>
+    <string name="new_orders">Yangi buyurtmalar</string>
+    <string name="money_432">432 000 so\'m</string>
+    <string name="no_load">Yuk : yo\'q</string>
+    <string name="cancel_order_tv">O\'tkazib yuborish</string>
+    <string name="to_where">Куда:</string>
+    <string name="with_high_load">Yuqori yuk bilan</string>
+    <string name="str_accept">Qabul qilish </string>
+    <string name="client_n7057">Mijoz N7057</string>
+    <string name="_0_2_km">0.2 km</string>
+    <string name="from_where_client">Qayerdan (mijoz lokatsiyasi):</string>
+    <string name="client_adress">2, Chilonzor 16 mavzesi, Chilonzor Tumani</string>
+    <string name="client_count">Mashinadagi yo\'lovchilar:0</string>
+    <string name="str_go">Ketdik</string>
+    <string name="str_clients">Yo\'lovchilar</string>
+    <string name="go_to_client">Mijoz tomon ketdik</string>
+    <string name="str_go_to_client_desc">Tugmani surib mijoz tomon yo\'l oling</string>
+    <string name="str_residue">Qoldiq 0.00 km</string>
+    <string name="resuide_minut" tools:ignore="MissingTranslation">0 min</string>
+    <string name="str_taxi">Taksi</string>
+    <string name="residue_minutes">0 min</string>
+    <string name="come_to_client">Yo\'lovchini oldiga keldingiz \"Yetib keldim\" ni suring</string>
+    <string name="str_navigator">navigator</string>
+    <string name="str_i_arrived">Yetib keldim</string>
+
+    <string name="str_get_client" translatable="false">Yo\'lovchi mashinaga o\'tirgandan keyin \"Mijoz olindi\" ni suring</string>
+    <string name="client_location">Mijozning lokatsiyasi:</string>
+    <string name="about_order">Buyurtma haqida</string>
+    <string name="str_cancel">Qaytarish</string>
+    <string name="str_phone">Telefon</string>
+    <string name="str_chat">Chat</string>
+    <string name="str_help">Yordam</string>
+    <string name="client_received">Mijoz olindi</string>
+
+    <string name="str_we_arriwed" translatable="false">Mijozni manziliga yetkazganizdan so\'ng \"Yetib keldik\" tugmasini suring</string>
+    <string name="we_arrived">Yetib keldik</string>
+    <string name="get_client_count">Olish kerak: 0</string>
+    <string name="clients_in_car">Mashinadagi yo\'lovchilar: 4</string>
+    <string name="about_travel">Safar haqida</string>
+    <string name="order_number">Buyurtma raqami:</string>
+    <string name="income_from_taxi">Taksidan daromad</string>
+    <string name="_0_so_m">0 so\'m</string>
+    <string name="income_from_postage">Jo\'natmadan daromad</string>
+    <string name="return_main_activity">Asosiy sahifaga qaytish</string>
+    <string name="home_inside_of_city">Shahar ichida rejimi</string>
+    <string name="home_inside_of_city_desc">Komfort, Oziq-ovqat, Ekonom, Yetkazib berish</string>
+    <string name="home_regional_regime">Viloyatlararo qatnov</string>
+    <string name="home_regional_regime_desc">To\'liq salon,Standart,Yetkazib berish xizmatiT</string>
+
+
+    <!--Tool tip texts-->
+    <string name="tool_on_way" tools:ignore="MissingTranslation">\"Liniyaga chiqish\" tugmasini bosing va amaliyotni boshlang</string>
+    <string name="tool_begin_practice">Amaliyotni boshlash uchun bu joyga bosib kerakli rejimni yoqing</string>
+    <string name="tool_setting_btn">\"Sozlash\" bo\'limidan kerakli tariflarni yoqib olishingiz mumkin</string>
+    <string name="tool_save_btn_click">\"Saqlash\" tugmasini bosing</string>
+    <string name="str_place">Joy</string>
+    <string name="tool_tariffs_on">Bu bo\'limdan kerakli tariflarni yoqing va orqaga qayting</string>
+    <string name="tool_continue_btn_click">\"Davom eting\" tugmasini bosing</string>
+    <string name="tool_which_direction">Qaysi yo\'nalishda harakatlanasiz tanlang!</string>
+    <string name="tool_which_to_region">Qaysi regionga borasiz belgilang</string>
+    <string name="tool_btn_click_continue">\"Liniyaga chiqish\" tugmasini bosib davom eting</string>
+    <string name="tool_new_order">Sizda yangi buyurtma bor qabul qilish uchun ustiga bosing</string>
+    <string name="in_road_empty">Bo\'sh</string>
+    <string name="tool_full_salon">Yo\'lovchilar o\'rindiqlari band qilindi endi \"Yo\'lga chiqish\" tugmasini bosing</string>
+    <string name="str_busy_in_road">Band</string>
+    <string name="tool_get_order">Buyurtmani olish uchun ustiga bosing</string>
+    <string name="tool_get_passenger">Yo\'lovchilarni olish uchun \"Mijoz N7057\" ni ustiga bosing</string>
+    <string name="tool_go">\"Ketdik\" tugmasini bosib davom eting</string>
+    <string name="tool_passenger_delivered">Yakunlashdan oldin barcha yo\'lovchilarni manziliga yetkazishingiz zarur!</string>
+    <string name="tool_finish_btn_click">\"Yakunlash\" tugmasini suring va amaliyotni yakunlang</string>
+    <string name="tool_main_page_click">\"Asosiy sahifaga qaytish\" tugmasini bosing va bosh sahifaga qayting</string>
+    <string name="finish_you_arrived">Siz yetib keldingiz</string>
+    <string name="finish_all_money">Jami to\'lov summasi</string>
+    <string name="_1_000_000_so_m">1 000 000 so\'m</string>
+    <string name="finish_go_time">Ketish vaqti</string>
+    <string name="finish_come_time">Kelish vaqti</string>
+    <string name="finish_in_car">Mashinada: 1</string>
+    <string name="finish_client_n_8951">Mijoz N 8951</string>
+    <string name="_432_000_so_m">432 000 so\'m</string>
+    <string name="finish_start_place">2, Chilonzor 16 mavzesi,Chilonzor Tumani</string>
+    <string name="finish_btn_text">Yakunlash</string>
+    <string name="fin_dialog_title">Manzilga N 8951 yetkazildimi</string>
+    <string name="fin_dialog_back">Orqaga</string>
+    <string name="fin_dialog_ok">Ha</string>
+    <string name="str_travel">Safar</string>
+    <string name="city_tool_back_text">Liniyadan chiqish tugmasini bosish orqali chiqishingiz mumkin</string>
+    <string name="city_back_btn">Liniyadan chiqish</string>
+    <string name="city_new_order_desc">Sizga buyurtma keldi buyurtmani qabul qiling</string>
+    <string name="city_skip_text">O\'tkazib yuborish</string>
+    <string name="city_">Ekonom</string>
+    <string name="city_order_4200">Buyurtma №4200</string>
+    <string name="city_from_you">Sizdan:</string>
+    <string name="km_1_5">1.5 km</string>
+    <string name="city_payment_type">To\'lov turi:</string>
+    <string name="city_cash">Naqd</string>
+    <string name="city_activity">Faollik:</string>
+    <string name="city_to_where">Qayerga:</string>
+    <string name="city_to_place">Qatortol ko\'chasi, Chilonzor tumani</string>
+    <string name="city_exit_to_way">Yo\'lga chiqdim</string>
+    <string name="city_come_desc">Kerakli manzil bo\'yicha keldik - Joyida tushunchasi</string>
+    <string name="city_econom_text">Ekonom:</string>
+    <string name="_3000_sum">3000 sum</string>
+    <string name="city_order_4199">Buyurtma №4199</string>
+    <string name="city_swipe_btn_come">Keldim</string>
+    <string name="city_residue_2_5">Qoldiq 2.5 km</string>
+    <string name="city_dr_connect_desc">Bu yerda siz foydalanuvchi bilan bog\'lanishingiz mumkin yoki bekor qilishingiz mumkin</string>
+    <string name="_3_min">3 min</string>
+    <string name="city_3000_sum">3000 sum</string>
+    <string name="order_4199">Buyurtma №4199</string>
+    <string name="money_type">To\'lov turi:</string>
+    <string name="city_chat">Domni boshiga 3 podezd</string>
+    <string name="city_cancel">Qaytarish</string>
+    <string name="str_wait">Kutish</string>
+    <string name="city_money_wait">Pullik kutish</string>
+    <string name="city_wait_time">02:58</string>
+    <string name="city_go_connect_desc">Yo\'lovchi o\'tirib, xavfsizlik kamarini taqqach, yo\'lga chiqish mumkin</string>
+    <string name="city_we_arrived">Yetib keldik</string>
+    <string name="finish_0_min">0 min</string>
+    <string name="finish_content_desc">Mijozni manzilga yetkazganizdan so\'ng yakunlash tugmasini suring</string>
+    <string name="str_finish">Yakunlash</string>
+    <string name="con_all_price_desc">Bu yerda sizga jami to\'lov ko\'rsatiladi</string>
+    <string name="city_all_price">Jami to\'lov</string>
+    <string name="str_drive">Haydash:</string>
+    <string name="all_price_str_5_km">5 km 200 m</string>
+    <string name="_14_200_sum">14 200 sum</string>
+    <string name="money_wait">Kutish:</string>
+    <string name="str_all">Jami:</string>
+    <string name="str_about_travel">O poezdke</string>
+    <string name="_0_km_13_sec">0 km 0m - 00:13 sek.</string>
+    <string name="str_close">Yopish</string>
+    <string name="str_finish_rating">Amaliyot tugatildi</string>
+    <string name="_7_500_sum">7 500 sum</string>
+    <string name="_2_order">2 zakas</string>
+    <string name="city_client_rating">Foydalanuvchini baholang</string>
+    <string name="str_rating">Baholash</string>
+    <string name="city_main_con_20">Bu yerda sizga buyurtma keladi qabul qilasiz</string>
+    <string name="city_main_con_21">Sizda ekonom toifasidagi mashina</string>
+    <string name="city_main_con_22">Bu buyurtma kartochkasi - yo\'lovchigacha bo\'lgan masofaga ahamiyat bering</string>
+    <string name="city_main_con_231">Bu to\'lov turi haqida</string>
+    <string name="city_main_con232">\"Chaqmoq\" belgisi buyurtma odatdagidan qimmatroqligini - yuqori talab hududida ekanini bildiradi</string>
+    <string name="city_main_con_24">Bu yer esa-yo\'lovchi sizni kutadigan manzil</string>
+    <string name="main_con_str_accept">Qabul qilish </string>
+    <string name="city_main_con_accept">Qabul qiling</string>
+    <string name="city_main_con_25">Buyurtma olish vaqti keldi. Fursat o\'tib ketmasidan tugmani bosing</string>
+    <string name="city_driver_con_40">Bu yerda foydalanuvchini qayerda turganini bilishingiz va bog\'lanishingiz mumkin</string>
+    <string name="city_con_all_price_70">Umumiy yurilgan yo\'l va summa ko\'rsatiladi</string>
+    <string name="city_con_all_price_71">Umumiy yurilgan yo\'l va summa ko\'rsatiladi</string>
+    <string name="city_con_all_price_72">Yo\'lovchini kutish vaqti va unga hisoblangan pul</string>
+    <string name="city_con_all_price_73">Umumiy hisoblangan pul</string>
+    <string name="city_con_all_price_74">Umumiy yurilgan yo\'l va vaqt</string>
+    <string name="city_con_all_price_75">To\'lov usuli ko\'rsatiladi bu yerda</string>
+    <string name="city_con_all_price_76">Amaliyot tugatildi yopish tugmasini bosing</string>
+    <string name="city_con_26_desc">Siz yo\'ldasiz\nEndi yo\'lovchini olishning ayni vaqti</string>
+    <string name="_15_500_sum">15 500 sum</string>
+    <string name="_0_km_0_m">0 km 0 m</string>
+    <string name="from_tashkent_continue">Liniyaga chiqish</string>
+    <string name="offline_order_title">Офлайн закази</string>
+    <string name="offline_orders_des">Заказы, полученные через колл-центр</string>
+    <string name="orders_nearby">Заказы рядом с вами</string>
+    <string name="learning">Обучение</string>
+    <string name="waiting_time_dialog_txt">Через сколько времени Вы прибудете к месту посадки?</string>
+    <string name="time_short"> мин.</string>
+    <string name="online">Online</string>
+    <string name="offline_i">Offline</string>
+    <string name="no_internet_order_complete">Internet aloqangiz yaxshi bo\'lmagani uchun buyurtmani yakunlab bo\'lmadi. Mijozdan ko\'rsatilgan narxni olib qoling internet bo\'lgan joyda ushbu buyurtmani yakunlab qo\'ying.</string>
+
+</resources>

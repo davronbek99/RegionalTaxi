@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogStyleZoom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimationZoom</item>
+    </style>
+
+    <style name="DialogAnimationZoom">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="lightStyle">
+        <item name="fontFamily">@font/inter_light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="lightStyleLight">
+        <item name="fontFamily">@font/inter_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="mediumStyle">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">?attr/txtColor</item>
+    </style>
+
+    <style name="mediumStyleLight">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="boldStyle">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">?attr/txtColor</item>
+
+    </style>
+
+    <style name="boldStyleLight">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="smallRadiusImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/background_white_top_corner_20</item>
+    </style>
+
+    <!--transParent Color-->
+    <style name="AppBottomSheetDialogThemeTransParent" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyleTransParent</item>
+    </style>
+
+    <style name="CustomBottomSheetStyleTransParent" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/background_white_top_corner_trans_parent</item>
+    </style>
+
+    <style name="TextStyleBold70018" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/txtColor</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+    </style>
+
+    <style name="TextStyleBold60018" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/txtColor</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+    </style>
+
+    <style name="TextStyleRegular40015" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/txtColor</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+    <style name="TextStyleGreen40015" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/Green</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+    <!--default button style-->
+    <style name="Button60015" parent="Widget.MaterialComponents.Button">
+        <item name="background">@color/green</item>
+        <item name="backgroundTint">@color/green</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:stateListAnimator" >@null</item>
+        <item name="maxLines">2</item>
+    </style>
+
+    <!--default button style-->
+    <style name="btnGreen" parent="Widget.MaterialComponents.Button">
+        <item name="background">@color/green</item>
+        <item name="backgroundTint">@color/green</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:stateListAnimator" tools:targetApi="lollipop">@null</item>
+        <item name="maxLines">2</item>
+    </style>
+
+
+    <!--dataPiker-->
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#ff6d00</item>
+        <item name="colorControlActivated">#33691e</item>
+        <item name="colorControlHighlight">#d50000</item>
+    </style>
+
+    <!--rating-->
+    <!--ratingbar-->
+    <style name="MyRatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#E0E0E0</item>
+        <item name="colorControlActivated">#F5921C</item>
+    </style>
+
+
+    <style name="TooltipTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorLink">@android:color/holo_blue_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TooltipTextAppearance.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TooltipTextAppearance.Small.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TooltipTextAppearance.Large">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TooltipDefaultStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

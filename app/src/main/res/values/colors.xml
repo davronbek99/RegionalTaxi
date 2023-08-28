@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_back_icon_color">#2C3E50</color>
+    <color name="tab_indicator_grey">#525E74</color>
+    <color name="indicator_selected_color">#3692FF</color>
+    <color name="main_status_color">#FFFFFF</color>
+    <color name="red">#FF6060</color>
+</resources>
