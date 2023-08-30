@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/bgColor"
-    tools:context=".ui.fragments.PhoneFragment">
+    android:background="@color/white"
+    tools:context=".ui.fragments.login.PhoneFragment">
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -28,16 +28,16 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:padding="@dimen/margin_padding_12dp"
-                android:src="@drawable/ic_back_icon"
-                app:tint="?attr/notifyIcon" />
+                android:src="@drawable/ic_back_icon" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
                 android:fontFamily="@font/inter_medium"
                 android:text="@string/registerSimple"
-                android:textColor="?attr/txtColor"
+                android:textColor="@color/txt_color"
                 android:textSize="@dimen/text_size_20sp" />
 
         </RelativeLayout>
@@ -49,7 +49,7 @@
             android:layout_marginTop="@dimen/margin_padding_56dp"
             android:text="@string/auth_phone_title"
             android:textAppearance="@style/boldStyle"
-            android:textColor="?attr/txtColor"
+            android:textColor="@color/txt_color"
             android:textSize="@dimen/text_size_24sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -59,7 +59,7 @@
             android:layout_marginTop="@dimen/margin_padding_12dp"
             android:fontFamily="@font/inter_regular"
             android:text="@string/phone_auth_text"
-            android:textColor="?attr/txtColor"
+            android:textColor="@color/txt_color"
             android:textSize="@dimen/text_size_14sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -69,20 +69,26 @@
             android:layout_marginTop="@dimen/margin_padding_36dp"
             android:fontFamily="@font/inter_bold"
             android:text="@string/text_phone"
-            android:textColor="?attr/txtColor"
+            android:textColor="@color/txt_color"
             android:textSize="@dimen/text_size_14sp" />
 
         <br.com.sapereaude.maskedEditText.MaskedEditText
             android:id="@+id/phone_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="1234567890"
-            android:inputType="phone"
+            android:layout_marginHorizontal="@dimen/dimen_24dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/ic_item_container_border_edit_style"
+            android:inputType="number"
+            android:padding="@dimen/dimen_16dp"
+            android:textColor="@color/txt_color"
+            android:textColorHint="@color/txt_hint_color"
+            android:textSize="@dimen/text_size_14sp"
             android:typeface="monospace"
-            app:keep_hint="true"
-            mask:allowed_chars="1234567890"
-            mask:mask="+7(###)###-##-##" />
-
+            mask:mask="+998 (##) ###-##-##" />
+        <!--        mask:allowed_chars="+998"-->
+        <!--        app:keep_hint="true"-->
+        <!--        android:drawableTintMode="?attr/notifyIcon"-->
         <!--        <com.santalu.maskara.widget.MaskEditText-->
         <!--            android:id="@+id/txt_phone"-->
         <!--            android:layout_width="match_parent"-->
@@ -113,7 +119,7 @@
             android:fontFamily="@font/inter_regular"
             android:gravity="center"
             android:text="@string/fragment_login_phone_sms"
-            android:textColor="?attr/alphaLoginText"
+            android:textColor="@color/alphaLoginText"
             android:textSize="@dimen/text_size_15sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -123,7 +129,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/margin_padding_8dp"
             android:fontFamily="@font/inter_regular"
-            android:text="@string/numberDoesntExist"
+            android:text="@string/numberDoesNotExist"
             android:textColor="@color/red"
             android:textSize="@dimen/text_size_14sp"
             android:visibility="gone" />

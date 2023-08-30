@@ -32,7 +32,7 @@
     <string name="register"><u>Регистрация</u></string>
     <string name="registerSimple">Вход</string>
     <string name="entrance">Вход</string>
-    <string name="numberDoesntExist">В систему отсуствует такой номер</string>
+    <string name="numberDoesNotExist">В систему отсуствует такой номер</string>
     <string name="Active">Активность</string>
     <string name="interest_rate">Процентная ставка:</string>
     <string name="earning">Заработок</string>

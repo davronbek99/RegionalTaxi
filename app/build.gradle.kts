@@ -5,12 +5,13 @@ plugins {
 
 android {
     namespace = "dev.davron.regionaltaxi"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "dev.davron.regionaltaxi"
         minSdk = 24
-        targetSdk = 33
+        //noinspection OldTargetApi
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -45,16 +46,18 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.1")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.1")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     //mask edittext
-    implementation("com.github.santalu:maskara:1.0.0")
+//    implementation("com.github.santalu:maskara:1.0.0")
 
 
 //    lotti animation
-    implementation ("com.airbnb.android:lottie:5.0.3")
+    implementation("com.airbnb.android:lottie:5.0.3")
 //
 //    // Dependency on local binaries
 //    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
@@ -62,5 +65,8 @@ dependencies {
 //    // Dependency on a remote binary
 //    implementation("com.example.android:app-magic:12.3")
     implementation("ru.egslava:MaskedEditText:1.0.5")
+
+    ///sms input layout...
+    implementation("com.github.mukeshsolanki:android-otpview-pinview:2.1.2")
 
 }
