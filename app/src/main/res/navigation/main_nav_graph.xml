@@ -2,7 +2,13 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_nav_graph">
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/taxiFragment">
 
 
+    <fragment
+        android:id="@+id/taxiFragment"
+        android:name="dev.davron.regionaltaxi.ui.fragments.taxi.TaxiFragment"
+        android:label="fragment_taxi"
+        tools:layout="@layout/fragment_taxi" />
 </navigation>

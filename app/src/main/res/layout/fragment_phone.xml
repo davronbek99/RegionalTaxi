@@ -72,43 +72,45 @@
             android:textColor="@color/txt_color"
             android:textSize="@dimen/text_size_14sp" />
 
-        <br.com.sapereaude.maskedEditText.MaskedEditText
-            android:id="@+id/phone_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/dimen_24dp"
-            android:layout_marginTop="@dimen/dimen_8dp"
-            android:background="@drawable/ic_item_container_border_edit_style"
-            android:inputType="number"
-            android:padding="@dimen/dimen_16dp"
-            android:textColor="@color/txt_color"
-            android:textColorHint="@color/txt_hint_color"
-            android:textSize="@dimen/text_size_14sp"
-            android:typeface="monospace"
-            mask:mask="+998 (##) ###-##-##" />
+        <!--        <br.com.sapereaude.maskedEditText.MaskedEditText-->
+        <!--            android:id="@+id/phone_input"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginHorizontal="@dimen/dimen_24dp"-->
+        <!--            android:layout_marginTop="@dimen/dimen_8dp"-->
+        <!--            android:background="@drawable/ic_item_container_border_edit_style"-->
+        <!--            android:inputType="number"-->
+        <!--            android:padding="@dimen/dimen_16dp"-->
+        <!--            android:textColor="@color/txt_color"-->
+        <!--            android:textColorHint="@color/txt_hint_color"-->
+        <!--            android:textSize="@dimen/text_size_14sp"-->
+        <!--            android:typeface="monospace"-->
+        <!--            app:allowed_chars="+998"-->
+        <!--            app:keep_hint="true"-->
+        <!--            mask:mask="+998 (##) ###-##-##" />-->
         <!--        mask:allowed_chars="+998"-->
         <!--        app:keep_hint="true"-->
         <!--        android:drawableTintMode="?attr/notifyIcon"-->
-        <!--        <com.santalu.maskara.widget.MaskEditText-->
-        <!--            android:id="@+id/txt_phone"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginHorizontal="@dimen/margin_padding_16dp"-->
-        <!--            android:layout_marginTop="@dimen/margin_padding_8dp"-->
-        <!--            android:background="@drawable/ic_item_contener_border_edit_style"-->
-        <!--            android:drawableEnd="@drawable/ic_phone"-->
-        <!--            android:drawableTintMode="?attr/notifyIcon"-->
-        <!--            android:fontFamily="@font/inter_regular"-->
-        <!--            android:hint="@string/enterSomething"-->
-        <!--            android:inputType="number"-->
-        <!--            android:padding="@dimen/margin_padding_16dp"-->
-        <!--            android:paddingStart="@dimen/margin_padding_24dp"-->
-        <!--            android:paddingEnd="@dimen/margin_padding_24dp"-->
-        <!--            android:textColor="?attr/txtColor"-->
-        <!--            android:textColorHint="?attr/txtHintColor"-->
-        <!--            android:textSize="@dimen/text_size_14sp"-->
-        <!--            app:mask="+___ (__) ___ __ __"-->
-        <!--            tools:ignore="UnusedAttribute" />-->
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/txt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_padding_16dp"
+            android:layout_marginTop="@dimen/margin_padding_8dp"
+            android:background="@drawable/ic_item_container_border_edit_style"
+            android:drawableEnd="@drawable/ic_phone"
+
+            android:fontFamily="@font/inter_regular"
+            android:hint="@string/enterSomething"
+            android:inputType="number"
+            android:padding="@dimen/margin_padding_16dp"
+            android:paddingStart="@dimen/margin_padding_24dp"
+            android:paddingEnd="@dimen/margin_padding_24dp"
+            android:textColor="@color/txt_color"
+            android:textColorHint="@color/txt_hint_color"
+            android:textSize="@dimen/text_size_14sp"
+            app:mask="+___ (__) ___ __ __"
+            tools:ignore="UnusedAttribute" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_first"

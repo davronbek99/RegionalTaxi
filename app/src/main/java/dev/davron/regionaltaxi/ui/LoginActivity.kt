@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.res.Configuration
+import android.net.ConnectivityManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -15,23 +16,31 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import dev.davron.regionaltaxi.R
+import dev.davron.regionaltaxi.broadcast.NetworkingBroadcastReceiver
+import dev.davron.regionaltaxi.broadcast.UpdateUI
 import dev.davron.regionaltaxi.databinding.ActivityLoginBinding
 import dev.davron.regionaltaxi.extensions.getAutoNightMode
 import dev.davron.regionaltaxi.extensions.statusBarColor
 import dev.davron.regionaltaxi.utils.MySharedPreferences
+import dev.davron.regionaltaxi.utils.broadcastReciever.SmsBroadcastReciever
 import java.text.SimpleDateFormat
 import java.util.Date
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() ,UpdateUI{
     private lateinit var binding: ActivityLoginBinding
 
     private lateinit var sharedPreferences: MySharedPreferences
     private lateinit var navController: NavController
+
+    private lateinit var broadcastReceiver: NetworkingBroadcastReceiver
+    private lateinit var smsReciever: SmsBroadcastReciever
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme()
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 
         init()
         setUpUI()
@@ -42,6 +51,10 @@ class LoginActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.findNavController()
+
+        broadcastReceiver = NetworkingBroadcastReceiver(this)
+        smsReciever = SmsBroadcastReciever()
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -173,6 +186,24 @@ class LoginActivity : AppCompatActivity() {
             wm.defaultDisplay.getMetrics(metrics)
             metrics.scaledDensity = configuration.fontScale * metrics.density
             baseContext.resources.updateConfiguration(configuration, metrics)
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        registerReceiver(broadcastReceiver, IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION))
+        registerReceiver(smsReciever, IntentFilter("android.provider.Telephony.SMS_RECEIVED"))
+    }
+
+    override fun onStop() {
+        super.onStop()
+        unregisterReceiver(broadcastReceiver)
+        unregisterReceiver(smsReciever)
+    }
+
+    override fun isOnLine(value: Boolean) {
+        if (!value) {
+            startActivity(Intent(this, NetworkReceiverActivity::class.java))
         }
     }
 }

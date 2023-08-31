@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import dev.davron.regionaltaxi.R
 import dev.davron.regionaltaxi.databinding.FragmentSmsCodeBinding
 
@@ -24,13 +25,17 @@ class SmsCodeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         init()
+        uiClickListener()
+    }
+
+    private fun uiClickListener() {
+        binding.backToHome.setOnClickListener {
+            findNavController().popBackStack()
+        }
     }
 
     private fun init() {
 
     }
 
-    private fun setOnClickListener() {
-
-    }
 }
