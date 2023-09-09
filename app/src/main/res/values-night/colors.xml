@@ -111,4 +111,7 @@
     <color name="editTextColor">#F9F9F9</color>
     <color name="alphaLoginText">#99272727</color>
     <color name="phone_status_bar_color">#FFFFFF</color>
+    <color name="brilliant_color">#753AF0</color>
+    <color name="seattle_60">#AAABAD</color>
+    <color name="text_secondary">#878787</color>
 </resources>

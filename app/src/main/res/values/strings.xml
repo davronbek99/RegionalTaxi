@@ -1099,5 +1099,7 @@ Egestas pretium ut morbi sed cursus varius eget fames bibendum. Nunc facilisis a
     <string name="online">Online</string>
     <string name="offline_i">Offline</string>
     <string name="no_internet_order_complete">Internet aloqangiz yaxshi bo\'lmagani uchun buyurtmani yakunlab bo\'lmadi. Mijozdan ko\'rsatilgan narxni olib qoling internet bo\'lgan joyda ushbu buyurtmani yakunlab qo\'ying.</string>
+    <string name="waiting_time_5">Arrival time ~5min</string>
+    <string name="unknown">Unknown</string>
 
 </resources>
