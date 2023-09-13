@@ -115,4 +115,13 @@
     <color name="brilliant_color">#753AF0</color>
     <color name="seattle_60">#AAABAD</color>
     <color name="text_secondary">#878787</color>
+    <color name="brand_main_on_primary">#000000</color>
+    <color name="seattle_140">#404247</color>
+    <color name="seattle_30">#D5D5D6</color>
+    <color name="madrid_100">#F9C541</color>
+    <color name="moscow_100">#ED6C66</color>
+    <color name="geneva_100">#19B28D</color>
+    <color name="seattle_10">#E9EAEA</color>
+    <color name="seattle_120">#55575C</color>
+    <color name="brand_main_wild_sand">#F4F4F4</color>
 </resources>

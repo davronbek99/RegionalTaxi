@@ -39,5 +39,30 @@
         android:paddingTop="@dimen/dimen_20dp"
         android:paddingBottom="@dimen/dimen_28dp">
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_flat_color_icons_contacts" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            style="@style/txt_display_regular_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:gravity="center"
+            android:text="@string/permission_request_to_contact"
+            android:textColor="@color/brand_main_on_primary" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/open_settings_btn"
+            style="@style/confirm_button_black_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:gravity="center"
+            android:text="@string/allow" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.appcompat.widget.LinearLayoutCompat>

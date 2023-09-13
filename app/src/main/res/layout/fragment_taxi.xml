@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.taxi.TaxiFragment">
+    tools:context=".ui.fragments.home.TaxiFragment">
 
 
     <!--    map view-->
@@ -15,70 +15,10 @@
         android:layout_height="match_parent" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <!--        back btn-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/back_button"
-            android:layout_width="@dimen/dimen_48dp"
-            android:layout_height="@dimen/dimen_48dp"
-            android:layout_margin="@dimen/dimen_20dp"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
-            app:cardCornerRadius="@dimen/dimen_32dp"
-            app:cardElevation="@dimen/dimen_6dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginEnd="@dimen/dimen_1dp"
-                android:background="@color/white">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_arrow_left" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_1dp"
-            android:layout_weight="1" />
-
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/brilliant_count_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/dimen_20dp"
-            android:background="@drawable/brilliant_back"
-            android:drawableStart="@drawable/ic_brilliant"
-            android:drawablePadding="@dimen/dimen_8dp"
-            android:fontFamily="@font/sfpro_display_bold"
-            android:paddingHorizontal="@dimen/dimen_10dp"
-            android:paddingVertical="@dimen/dimen_6dp"
-            android:text="560"
-            android:textColor="@color/white"
-            android:textSize="@dimen/dimen_16dp"
-            android:visibility="gone"
-            tools:ignore="HardcodedText,SpUsage" />
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="@dimen/dimen_128dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/dimen_148dp"
+        android:layout_marginBottom="@dimen/dimen_48dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -88,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/dimen_5dp"
             app:cardCornerRadius="@dimen/dimen_6dp"
-            app:cardElevation="@dimen/dimen_8dp">
+            app:cardElevation="@dimen/dimen_6dp">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -129,7 +69,7 @@
                             android:maxLines="1"
                             android:text="Yunusobod 4 kv 22-dom 37 kv"
                             android:textColor="@color/seattle_60"
-                            android:textSize="12sp"
+                            android:textSize="15sp"
                             tools:ignore="HardcodedText" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -155,7 +95,7 @@
                             android:fontFamily="@font/sfpro_display_medium"
                             android:text="@string/waiting_time_5"
                             android:textColor="@color/text_secondary"
-                            android:textSize="10sp"
+                            android:textSize="12sp"
                             tools:ignore="SmallSp" />
 
                         <androidx.appcompat.widget.AppCompatTextView
@@ -229,6 +169,169 @@
             android:backgroundTint="@color/white"
             android:elevation="@dimen/dimen_6dp"
             android:src="@drawable/ic_current_location" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_12_white"
+            android:clickable="true"
+            android:elevation="@dimen/dimen_6dp"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_20dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/where_to_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:background="@drawable/gray_back_16"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="57dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/where_home_icon"
+                    app:riv_corner_radius_bottom_left="8dp"
+                    app:riv_corner_radius_top_left="8dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/to_where_btn"
+                    style="@style/txt_display_semibold_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="12dp"
+                    android:text="@string/to_where_q"
+                    android:textColor="@color/brand_main_on_primary"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/seattle_30"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/next_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/back_orange_12"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/txt_display_semibold_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center"
+                        android:text="@string/to_order_2"
+                        android:textColor="@color/brand_main_on_primary" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/next_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:src="@drawable/ic_bx_right_arrow_alt"
+                            android:translationX="0dp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_city_saved_recent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/brand_main_wild_sand" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/delivery_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_gray_12">
+
+<!--                    <androidx.appcompat.widget.AppCompatTextView-->
+<!--                        style="@style/txt_display_medium_13"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="12dp"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:text="@string/delivery_txt"-->
+<!--                        android:textColor="@color/brand_main_on_primary" />-->
+
+<!--                    <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="44dp"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_marginTop="30dp"-->
+<!--                        android:src="@drawable/icon_parcel"-->
+<!--                        app:riv_corner_radius_bottom_right="12dp" />-->
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/region_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_gray_12">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/txt_display_medium_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/regional_taxi"
+                        android:textColor="@color/brand_main_on_primary" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/icon_region_car_home"
+                        app:riv_corner_radius_bottom_right="12dp" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 

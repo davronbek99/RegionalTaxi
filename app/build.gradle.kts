@@ -77,4 +77,7 @@ dependencies {
     //karumi dexter
     implementation("com.karumi:dexter:6.2.3")
 
+    //rounded corner image view
+    implementation("com.makeramen:roundedimageview:2.3.0")
+
 }

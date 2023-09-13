@@ -1101,5 +1101,14 @@ Egestas pretium ut morbi sed cursus varius eget fames bibendum. Nunc facilisis a
     <string name="no_internet_order_complete">Internet aloqangiz yaxshi bo\'lmagani uchun buyurtmani yakunlab bo\'lmadi. Mijozdan ko\'rsatilgan narxni olib qoling internet bo\'lgan joyda ushbu buyurtmani yakunlab qo\'ying.</string>
     <string name="waiting_time_5">Arrival time ~5min</string>
     <string name="unknown">Unknown</string>
+    <string name="permission_request_to_contact">Please, allow to get your contacts.</string>
+    <string name="allow">Allow</string>
+    <string name="permission_request_to_location">Please, allow to get your location.</string>
+    <string name="home">Home</string>
+    <string name="activity">Activity</string>
+    <string name="to_where_q">To where?</string>
+    <string name="to_order_2">To order</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="departure_place_unknown">Departure place is unknown</string>
 
 </resources>

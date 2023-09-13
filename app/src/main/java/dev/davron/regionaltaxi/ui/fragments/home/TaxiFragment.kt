@@ -1,4 +1,4 @@
-package dev.davron.regionaltaxi.ui.fragments.taxi
+package dev.davron.regionaltaxi.ui.fragments.home
 
 import android.Manifest
 import android.content.Context
@@ -11,7 +11,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.activity.addCallback
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
@@ -23,6 +22,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
 import com.karumi.dexter.Dexter
 import com.karumi.dexter.MultiplePermissionsReport
 import com.karumi.dexter.PermissionToken
@@ -30,12 +30,15 @@ import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener
 import dev.davron.regionaltaxi.R
 import dev.davron.regionaltaxi.databinding.FragmentTaxiBinding
+import dev.davron.regionaltaxi.models.city.CitySelectedLocationModel
+import dev.davron.regionaltaxi.ui.dialogs.fragmentBottomSheetDialogs.settingPermissionDialog.OpenSettingsBottomSheetFragment
 import dev.davron.regionaltaxi.utils.Common
 import dev.davron.regionaltaxi.utils.LocationHelperSecondary
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-class TaxiFragment : Fragment(), OnMapReadyCallback, GoogleMap.CancelableCallback {
+class TaxiFragment : Fragment(), OnMapReadyCallback, GoogleMap.CancelableCallback,
+    OpenSettingsBottomSheetFragment.ChangeListener {
 
     private lateinit var binding: FragmentTaxiBinding
     private lateinit var currentLocation: LatLng
@@ -45,6 +48,9 @@ class TaxiFragment : Fragment(), OnMapReadyCallback, GoogleMap.CancelableCallbac
     private val zoomValue: Float = 18f
 
     private var googleMap: GoogleMap? = null
+    private var locationName: String? = null
+
+    private var citySelectedLocationList = ArrayList<CitySelectedLocationModel>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
@@ -57,6 +63,47 @@ class TaxiFragment : Fragment(), OnMapReadyCallback, GoogleMap.CancelableCallbac
         super.onViewCreated(view, savedInstanceState)
         init()
         initMap()
+        onClickListener()
+    }
+
+    private fun onClickListener() {
+        binding.regionBtn.setOnClickListener {
+            findNavController().navigate(R.id.to_region_taxi)
+        }
+
+        binding.toWhereBtn.setOnClickListener {
+            if (isLocationPermissionGranted) {
+                if (citySelectedLocationList[0].name.isNotEmpty()) {
+                    val bundle = Bundle()
+                    bundle.putString("which", "to")
+                    findNavController().navigate(R.id.to_map_taxi_where_to, bundle)
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        resources.getString(R.string.departure_place_unknown),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            } else {
+                openSettingsDialog()
+            }
+        }
+
+        binding.nextBtn.setOnClickListener {
+            if (isLocationPermissionGranted) {
+                if (citySelectedLocationList[0].name.isNotEmpty()) {
+                    findNavController().navigate(R.id.to_map_tariff)
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        resources.getString(R.string.departure_place_unknown),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            } else {
+                openSettingsDialog()
+            }
+        }
     }
 
     private fun init() {
@@ -81,6 +128,17 @@ class TaxiFragment : Fragment(), OnMapReadyCallback, GoogleMap.CancelableCallbac
         googleMap.uiSettings.isMapToolbarEnabled = false
         googleMap.setMaxZoomPreference(18f)
 
+        this.googleMap?.setInfoWindowAdapter(object : GoogleMap.InfoWindowAdapter {
+            override fun getInfoContents(p0: Marker): View? {
+                locationName = p0.title.toString()
+                return null
+            }
+
+            override fun getInfoWindow(p0: Marker): View? {
+                return null
+            }
+
+        })
         onUIClickListener()
         lifecycleScope.launch {
             delay(1000)
@@ -91,14 +149,13 @@ class TaxiFragment : Fragment(), OnMapReadyCallback, GoogleMap.CancelableCallbac
         binding.btnCurrentLocation.setOnClickListener {
             locationController()
         }
+
+
     }
 
     private fun locationController() {
         if (isLocationPermissionGranted) {
-            Toast.makeText(requireContext(), "isLocationPermissionGranted", Toast.LENGTH_SHORT)
-                .show()
             if (isGPSOn) {
-                Toast.makeText(requireContext(), "isGPSOn", Toast.LENGTH_SHORT).show()
                 animateMapToCurrentLocation()
             } else {
                 turnOnGPS()
@@ -128,14 +185,18 @@ class TaxiFragment : Fragment(), OnMapReadyCallback, GoogleMap.CancelableCallbac
             ) {
                 token?.continuePermissionRequest()
             }
-        })
-            .withErrorListener {
-                Toast.makeText(requireContext(), it.name, Toast.LENGTH_SHORT).show()
-            }.check()
+        }).withErrorListener {
+            Toast.makeText(requireContext(), it.name, Toast.LENGTH_SHORT).show()
+        }.check()
     }
 
     private fun openSettingsDialog() {
-val openSettingsBottomSheetFragment=Ope
+        val openSettingsBottomSheetFragment = OpenSettingsBottomSheetFragment(
+            R.drawable.ic_setting_location,
+            resources.getString(R.string.permission_request_to_location),
+            this
+        )
+        openSettingsBottomSheetFragment.show(childFragmentManager, "")
     }
 
     override fun onResume() {
@@ -151,8 +212,6 @@ val openSettingsBottomSheetFragment=Ope
             requireContext().checkCallingOrSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && requireContext().checkCallingOrSelfPermission(
                 Manifest.permission.ACCESS_COARSE_LOCATION
             ) == PackageManager.PERMISSION_GRANTED
-        Toast.makeText(requireContext(), isLocationPermissionGranted.toString(), Toast.LENGTH_SHORT)
-            .show()
         if (isLocationPermissionGranted) {
             requestLocationUpdates()
         }
@@ -205,7 +264,9 @@ val openSettingsBottomSheetFragment=Ope
             }
             googleMap?.isMyLocationEnabled = true
 
+            removeShimmer()
             binding.timeDepTv.text = resources.getString(R.string.waiting_time_5)
+            binding.addressNameTv.text = locationName
         }
     }
 
@@ -221,5 +282,15 @@ val openSettingsBottomSheetFragment=Ope
 //        activity?.onBackPressedDispatcher?.addCallback {
 //            findNavController().popBackStack(R.id.homeFragment, false)
 //        }
+    }
+
+    override fun dismissListenerPermissionBottomSheet() {
+
+    }
+
+    private fun removeShimmer() {
+        binding.shimmerLayout.stopShimmer()
+        binding.shimmerLayout.visibility = View.INVISIBLE
+        binding.currentAddressContainer.visibility = View.VISIBLE
     }
 }

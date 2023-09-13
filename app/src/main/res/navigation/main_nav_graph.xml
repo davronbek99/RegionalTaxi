@@ -8,7 +8,66 @@
 
     <fragment
         android:id="@+id/taxiFragment"
-        android:name="dev.davron.regionaltaxi.ui.fragments.taxi.TaxiFragment"
+        android:name="dev.davron.regionaltaxi.ui.fragments.home.TaxiFragment"
         android:label="fragment_taxi"
         tools:layout="@layout/fragment_taxi" />
+
+    <action
+        android:id="@+id/to_region_taxi"
+        app:destination="@id/regionTaxiFragment"
+        app:enterAnim="@anim/right_to_left_enter"
+        app:exitAnim="@anim/right_to_left_exit"
+        app:popEnterAnim="@anim/pop_enter"
+        app:popExitAnim="@anim/pop_exit" />
+
+    <fragment
+        android:id="@+id/regionTaxiFragment"
+        android:name="dev.davron.regionaltaxi.ui.fragments.regionTaxi.RegionTaxiFragment"
+        android:label="fragment_region_taxi"
+        tools:layout="@layout/fragment_region_taxi" />
+
+    <action
+        android:id="@+id/to_map_taxi_where_to"
+        app:destination="@id/mapTaxiWhereToFragment"
+        app:enterAnim="@anim/right_to_left_enter"
+        app:exitAnim="@anim/right_to_left_exit"
+        app:popEnterAnim="@anim/pop_enter"
+        app:popExitAnim="@anim/pop_exit" />
+    <fragment
+        android:id="@+id/mapTaxiWhereToFragment"
+        android:name="dev.davron.regionaltaxi.ui.fragments.home.mapTaxi.mapTaxiWhereTo.MapTaxiWhereToFragment"
+        android:label="fragment_map_taxi_where_to"
+        tools:layout="@layout/fragment_map_taxi_where_to" />
+
+    <action
+        android:id="@+id/to_map_tariff"
+        app:destination="@id/mapTariffFragment"
+        app:enterAnim="@anim/right_to_left_enter"
+        app:exitAnim="@anim/right_to_left_exit"
+        app:popEnterAnim="@anim/pop_enter"
+        app:popExitAnim="@anim/pop_exit" />
+
+    <fragment
+        android:id="@+id/mapTariffFragment"
+        android:name="dev.davron.regionaltaxi.ui.fragments.home.mapTaxi.mapTariff.MapTariffFragment"
+        android:label="fragment_map_tariff"
+        tools:layout="@layout/fragment_map_tariff" />
+
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="dev.davron.regionaltaxi.ui.fragments.activity.ActivityFragment"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_activity" />
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="dev.davron.regionaltaxi.ui.fragments.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="dev.davron.regionaltaxi.ui.fragments.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
