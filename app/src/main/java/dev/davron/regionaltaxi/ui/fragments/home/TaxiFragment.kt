@@ -73,17 +73,17 @@ class TaxiFragment : Fragment(), OnMapReadyCallback, GoogleMap.CancelableCallbac
 
         binding.toWhereBtn.setOnClickListener {
             if (isLocationPermissionGranted) {
-                if (citySelectedLocationList[0].name.isNotEmpty()) {
+//                if (citySelectedLocationList[0].name.isNotEmpty()) {
                     val bundle = Bundle()
                     bundle.putString("which", "to")
                     findNavController().navigate(R.id.to_map_taxi_where_to, bundle)
-                } else {
-                    Toast.makeText(
-                        requireContext(),
-                        resources.getString(R.string.departure_place_unknown),
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
+//                } else {
+//                    Toast.makeText(
+//                        requireContext(),
+//                        resources.getString(R.string.departure_place_unknown),
+//                        Toast.LENGTH_SHORT
+//                    ).show()
+//                }
             } else {
                 openSettingsDialog()
             }
@@ -91,15 +91,15 @@ class TaxiFragment : Fragment(), OnMapReadyCallback, GoogleMap.CancelableCallbac
 
         binding.nextBtn.setOnClickListener {
             if (isLocationPermissionGranted) {
-                if (citySelectedLocationList[0].name.isNotEmpty()) {
+//                if (citySelectedLocationList[0].name.isNotEmpty()) {
                     findNavController().navigate(R.id.to_map_tariff)
-                } else {
-                    Toast.makeText(
-                        requireContext(),
-                        resources.getString(R.string.departure_place_unknown),
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
+//                } else {
+//                    Toast.makeText(
+//                        requireContext(),
+//                        resources.getString(R.string.departure_place_unknown),
+//                        Toast.LENGTH_SHORT
+//                    ).show()
+//                }
             } else {
                 openSettingsDialog()
             }

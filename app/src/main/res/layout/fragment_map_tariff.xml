@@ -3,12 +3,528 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.home.mapTaxi.mapTariff.MapTariffFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!--    map view-->
+    <fragment
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- lotti container-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:clickable="true"
+        android:paddingBottom="120dp"
+        android:id="@+id/search_car_lotti"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:alpha="0.4"
+        android:background="@color/black"
+        android:visibility="gone"
+        android:focusable="true">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/search_car" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--    top toolbar-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!--        back btn-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/dimen_48dp"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:cardCornerRadius="@dimen/dimen_24dp"
+            app:cardElevation="@dimen/dimen_5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dimen_1dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_left" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--    distance and time card-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/distance_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/dimen_10dp"
+            app:cardElevation="@dimen/dimen_6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dimen_16dp"
+                android:paddingVertical="@dimen/dimen_8dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="25 km"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:text="~"
+                    android:textColor="@color/text_secondary"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_regular"
+                    android:text="32 min"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    bottom sheet-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/tariff_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!--        bottom main details-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:elevation="@dimen/dimen_6dp"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_20dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dimen_20dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="4dp"
+                    android:src="@drawable/ic_line_where_from" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/from_address_tv"
+                        style="@style/txt_display_regular_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_ripple_effect"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingHorizontal="4dp"
+                        android:paddingVertical="@dimen/dimen_10dp"
+                        android:text="@string/from_where_q"
+                        android:textColor="@color/brand_main_on_primary" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="4dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/to_address_tv"
+                        style="@style/txt_display_regular_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_ripple_effect"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingHorizontal="4dp"
+                        android:paddingVertical="@dimen/dimen_10dp"
+                        android:text="@string/to_where_q"
+                        android:textColor="@color/brand_main_on_primary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/change_button"
+                        android:layout_width="@dimen/dimen_40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_ripple_effect"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_change_icon" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/add_stop_button"
+                        android:layout_width="@dimen/dimen_40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_ripple_effect"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_add_icon"
+                        app:tint="@color/seattle_100" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/seattle_05" />
+
+
+            <!--            //tariff elements-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_20dp"
+                    android:forceHasOverlappingRendering="false"
+                    android:overScrollMode="never"
+                    app:tabGravity="start"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMode="scrollable"
+                    app:tabPaddingEnd="0dp"
+                    app:tabPaddingStart="0dp" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_pager_tariffs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:overScrollMode="never"
+                    android:paddingBottom="@dimen/dimen_20dp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2dp"
+                android:background="@drawable/background_shadow_top"
+                android:elevation="@dimen/dimen_32dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_20dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/change_payment_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/payment_type_tv"
+                            style="@style/txt_display_medium_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/dimen_13dp"
+                            android:gravity="center_vertical"
+                            android:paddingVertical="@dimen/dimen_10dp"
+                            android:text="@string/cash"
+                            android:textColor="@color/brand_main_primary"
+                            app:drawableStartCompat="@drawable/ic_cash" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/dimen_10dp"
+                        android:background="@color/brand_main_wild_sand" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/wishes_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end">
+
+                        <TextView
+                            android:id="@+id/wishes_tv"
+                            style="@style/txt_display_medium_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:drawablePadding="@dimen/dimen_13dp"
+                            android:paddingVertical="@dimen/dimen_16dp"
+                            android:text="@string/wishes"
+                            android:textColor="@color/brand_main_primary"
+                            app:drawableLeftCompat="@drawable/ic_wishes" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_32dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/confirm_button"
+                        style="@style/main_button_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_order" />
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:shimmer_duration="800">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            style="@style/main_button_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:text="@string/to_order"
+                            android:textColor="@color/brand_main_on_primary" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+                </FrameLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--    bottom sheet second searching driver-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/searching_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dimen_10dp"
+        android:visibility="gone">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/driver_search_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:elevation="@dimen/dimen_13dp"
+            android:focusable="false"
+            android:isScrollContainer="false"
+            android:overScrollMode="never"
+            android:visibility="visible"
+            app:behavior_peekHeight="240dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_white_8"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_13dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/sfpro_display_semibold"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="@string/finding_nearby_driver"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_18dp">
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:background="@color/line_color"
+                            android:visibility="gone" />
+
+                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="true"
+                            app:indicatorColor="@color/progress_color"
+                            app:trackColor="@color/line_color"
+                            app:trackThickness="@dimen/dimen_2dp" />
+
+                        <!--                    <com.airbnb.lottie.LottieAnimationView-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        app:lottie_autoPlay="true"-->
+                        <!--                        app:lottie_loop="true"-->
+                        <!--                        app:lottie_rawRes="@raw/search_driver_lottie" />-->
+
+
+                    </FrameLayout>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/dimen_20dp"
+                        android:paddingBottom="@dimen/dimen_16dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_line_where_from" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dimen_16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/from_address_tv2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:drawablePadding="@dimen/dimen_6dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/sfpro_display_medium"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/dimen_10dp"
+                                android:singleLine="true"
+                                android:text="@string/from_where_q"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/to_address_tv2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/dimen_5dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/sfpro_display_medium"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/dimen_10dp"
+                                android:text="@string/to_where_q"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <!--    search cancel btn-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cancel_search_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:background="@drawable/background_white_8"
+                    android:elevation="0dp"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/dimen_16dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/txt_display_semibold_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel_order"
+                        android:textColor="@color/moscow_100" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </FrameLayout>

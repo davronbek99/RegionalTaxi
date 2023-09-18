@@ -200,6 +200,8 @@
 
 
     <color name="seattle_100">#808185</color>
+    <color name="accent_orange_accent">#FFB900</color>
+    <color name="brand_main_primary">#2B2D33</color>
 
     <style name="txt_display_semibold_16">
         <item name="android:fontFamily">@font/sfpro_display_semibold</item>
@@ -221,5 +223,290 @@
         <item name="android:fontFamily">@font/sfpro_display_medium</item>
         <item name="android:textSize">13sp</item>
     </style>
+
+
+
+
+
+
+
+    <!--    text 34 px-->
+    <style name="txt_display_regular_34">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="txt_display_medium_34">
+        <item name="android:fontFamily">@font/sfpro_display_medium</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="txt_display_semibold_34">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="txt_display_bold_34">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <!--    text 28 px-->
+    <style name="txt_display_regular_28">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="txt_display_medium_28">
+        <item name="android:fontFamily">@font/sfpro_display_medium</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="txt_display_semibold_28">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="txt_display_bold_28">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="txt_display_medium_22">
+        <item name="android:fontFamily">@font/sfpro_display_medium</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="txt_display_semibold_22">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="txt_display_bold_22">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!--    text 20 px-->
+    <style name="txt_display_regular_20">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="txt_display_medium_20">
+        <item name="android:fontFamily">@font/sfpro_display_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="txt_display_semibold_20">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="txt_display_bold_20">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--    text 17 px-->
+    <style name="txt_display_regular_17">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="txt_display_medium_17">
+        <item name="android:fontFamily">@font/sfpro_display_medium</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="txt_display_semibold_17">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="txt_display_bold_17">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!--    text 16 px-->
+    <style name="txt_display_regular_16">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="txt_display_medium_16">
+        <item name="android:fontFamily">@font/sfpro_display_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="txt_display_semibold_15">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="txt_display_bold_16">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--    text 14 px-->
+    <style name="txt_display_regular_14">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--    text 15 px-->
+    <style name="txt_display_regular_15">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="txt_display_medium_15">
+        <item name="android:fontFamily">@font/sfpro_display_medium</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="txt_display_semibold_14">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="txt_display_bold_14">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--    text 13 px-->
+
+    <style name="txt_display_semibold_13">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="txt_display_bold_13">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!--    text 12 px-->
+    <style name="txt_display_regular_12">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="txt_display_medium_12">
+        <item name="android:fontFamily">@font/sfpro_display_medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="txt_display_semibold_12">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="txt_display_bold_12">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--    text 11 px-->
+    <style name="txt_display_regular_11">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="txt_display_medium_11">
+        <item name="android:fontFamily">@font/sfpro_display_medium</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="txt_display_semibold_11">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="txt_display_bold_11">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!--    car number style-->
+    <style name="car_region_number_regular_14">
+        <item name="android:fontFamily">@font/gl_nummernschild_mtl</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="car_main_number_regular_17">
+        <item name="android:fontFamily">@font/gl_nummernschild_mtl</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="secondary_main_button" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:background">@drawable/secondary_main_button_back</item>
+    </style>
+
+    <style name="main_button_style" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/brand_main_on_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:background">@drawable/main_button_back</item>
+        <item name="android:height">@dimen/dimen_56dp</item>
+    </style>
+
+    <style name="rating_unselected_button_style" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/brand_main_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:background">@drawable/background_unselected_rating_btn</item>
+        <item name="android:height">@dimen/dimen_56dp</item>
+    </style>
+
+    <!--    dialog pop up animation-->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/seattle_60</item>
+        <item name="colorControlActivated">@color/accent_orange_accent</item>
+    </style>
+
+    <style name="day_text_appearance_in_calendar">
+        <item name="android:fontFamily">@font/sfpro_display_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/calendar_days_text_color</item>
+    </style>
+
+    <style name="week_text_appearance_in_calendar">
+        <item name="android:fontFamily">@font/sfpro_display_regular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/seattle_120</item>
+    </style>
+
+    <style name="header_text_appearance_in_calendar">
+        <item name="android:fontFamily">@font/sfpro_display_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/brand_main_on_primary</item>
+    </style>
+
 
 </resources>

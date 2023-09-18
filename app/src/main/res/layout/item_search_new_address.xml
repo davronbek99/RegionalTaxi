@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/address_name_tv"
+        style="@style/txt_display_medium_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Mega Planet"
+        android:textColor="@color/brand_main_primary" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/distance_tv"
+            style="@style/txt_display_regular_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.2km"
+            android:textColor="@color/seattle_60" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_1dp"
+            android:src="@drawable/ic_ellipse" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/address_location_tv"
+            style="@style/txt_display_regular_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Юнусабад-11, 11, Ташкент, Узбекистан"
+            android:textColor="@color/seattle_60" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/brand_main_wild_sand" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

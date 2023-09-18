@@ -1110,5 +1110,17 @@ Egestas pretium ut morbi sed cursus varius eget fames bibendum. Nunc facilisis a
     <string name="to_order_2">To order</string>
     <string name="no_internet">No internet connection</string>
     <string name="departure_place_unknown">Departure place is unknown</string>
+    <string name="from_where_q">From where?</string>
+    <string name="saved">Saved</string>
+    <string name="all">All</string>
+    <string name="we_recommend_that_you_save_your_favorite_addresses_for_quick_address_selection">We recommend that you save your favorite addresses for quick address selection.</string>
+    <string name="use_my_current_location">Use my current location</string>
+    <string name="select_from_map">Select on the map</string>
+    <string name="to_order">To order</string>
+    <string name="request_for_booking">Request for booking</string>
+    <string name="cash">Cash</string>
+    <string name="wishes">Wishes</string>
+    <string name="finding_nearby_driver">Finding you a nearby driver…</string>
+    <string name="cancel_order">Cancel order</string>
 
 </resources>
