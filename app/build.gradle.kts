@@ -80,4 +80,7 @@ dependencies {
     //rounded corner image view
     implementation("com.makeramen:roundedimageview:2.3.0")
 
+    //calendar view
+    implementation ("com.github.prolificinteractive:material-calendarview:2.0.1")
+
 }

@@ -1121,5 +1121,21 @@ Egestas pretium ut morbi sed cursus varius eget fames bibendum. Nunc facilisis a
     <string name="wishes">Wishes</string>
     <string name="finding_nearby_driver">Finding you a nearby driver…</string>
     <string name="cancel_order">Cancel order</string>
+    <string name="inter_city_taxi">Intercity taxi</string>
+    <string name="trip_lowest_price">Trips of your choice at the lowest prices</string>
+
+    <!--    month -->
+    <string name="jan">Янв</string>
+    <string name="feb">Фев</string>
+    <string name="march">Март</string>
+    <string name="april">Апр</string>
+    <string name="may">Май</string>
+    <string name="jun">Июнь</string>
+    <string name="july">Июль</string>
+    <string name="aug">Авг</string>
+    <string name="sep">Cен</string>
+    <string name="oct">Окт</string>
+    <string name="nov">Ноя</string>
+    <string name="dec">Дек</string>
 
 </resources>

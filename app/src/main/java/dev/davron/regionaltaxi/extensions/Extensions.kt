@@ -1,11 +1,13 @@
 package dev.davron.regionaltaxi.extensions
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import androidx.annotation.ColorInt
 import androidx.fragment.app.FragmentActivity
+import dev.davron.regionaltaxi.R
 import java.text.SimpleDateFormat
 import java.util.Date
 
@@ -36,4 +38,28 @@ fun FragmentActivity.getAutoNightMode(): String {
     val string = df.format(hour).toInt()
 
     return if (string < 6 || string > 18) "night" else "day"
+}
+
+fun returnSelectedDate(context: Context, day: Int, month: Int, year: Int): String {
+    return "$day ${(month).toMonthName(context)} $year"
+}
+
+fun Int.toMonthName(context: Context): String {
+    return when (this) {
+        1 -> context.resources.getString(R.string.jan)
+        2 -> context.resources.getString(R.string.feb)
+        3 -> context.resources.getString(R.string.march)
+        4 -> context.resources.getString(R.string.april)
+        5 -> context.resources.getString(R.string.may)
+        6 -> context.resources.getString(R.string.jun)
+        7 -> context.resources.getString(R.string.july)
+        8 -> context.resources.getString(R.string.aug)
+        9 -> context.resources.getString(R.string.sep)
+        10 -> context.resources.getString(R.string.oct)
+        11 -> context.resources.getString(R.string.nov)
+        12 -> context.resources.getString(R.string.dec)
+        else -> {
+            ""
+        }
+    }
 }

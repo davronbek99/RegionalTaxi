@@ -129,4 +129,8 @@
     <color name="grey">#F9F9F9</color>
     <color name="seattle_05">#F8F8F8</color>
     <color name="progress_color">#0073C7</color>
+    <color name="sochi_10">#E6F4FC</color>
+    <color name="madrid_10">#FEF6E1</color>
+    <color name="accent_orange_on_accent">#F5B200</color>
+    <color name="main_color">#15C657</color>
 </resources>
